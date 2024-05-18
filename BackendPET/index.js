@@ -1,13 +1,13 @@
-
 import express from "express";
 import mysql from "mysql";
 import cors from "cors";
 
-//express e cors sao libs usadas para interigir com uma api de varios dominios
+// Configuração do servidor
 const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Configuração do banco de dados
 const db = mysql.createConnection({
     host: "localhost",
     user: "root",
@@ -23,12 +23,9 @@ db.connect((err) => {
   }
 });
 
-//req: pega dados do front
-//res: envia
+// Rota de registro
 app.post("/register", (req, res) => {
   const { nome, email, password, cpf } = req.body;
-
-  
   const values = [nome, email, password, String(cpf)];
 
   const q = "INSERT INTO usuarios (`nome`, `email`, `password`, `cpf`) VALUES (?)";
@@ -42,11 +39,26 @@ app.post("/register", (req, res) => {
   });
 });
 
-//criar o get para o login
+// Rota de login
+app.post("/login", (req, res) => {
+  const { email, password } = req.body;
 
+  const q = "SELECT * FROM usuarios WHERE email = ? AND password = ?";
+  
+  db.query(q, [email, password], (err, data) => {
+    if (err) {
+      console.error('Error executing query:', err);
+      return res.status(500).json({ msg: 'Database error', error: err });
+    }
+    if (data.length > 0) {
+      return res.status(200).json({ msg: 'LOGIN BEM SUCEDIDO', data });
+    } else {
+      return res.status(401).json({ msg: 'CREDENCIAIS INVÁLIDAS' });
+    }
+  });
+});
 
-
-
+// Iniciando o servidor
 app.listen(8800, () => {
   console.log("Rodando na porta 8800.");
 });
