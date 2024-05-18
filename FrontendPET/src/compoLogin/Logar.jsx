@@ -32,7 +32,7 @@ const Logar = () => {
   });
 
   return (
-    <div className="container2">
+    <div className="container">
       <Formik
         initialValues={{ email: "", password: "" }}
         validationSchema={validationsLogin}
