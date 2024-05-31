@@ -15,8 +15,8 @@ function Main(){
         <ul>
           <li><a href="#option1">Inicio</a></li>
           <li><a href="#option2">Contato</a></li>
-          <li><a href="#option3">Entrar</a></li>
-          <li><a href="#option4">Registre-se</a></li>
+          <li><a href="/login">Entrar</a></li>
+          <li><a href="/cadastro">Registre-se</a></li>
         </ul>
       </nav>
     </header>
