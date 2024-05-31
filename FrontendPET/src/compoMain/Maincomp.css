@@ -1,6 +1,71 @@
-#tituloHome {
-    color: black;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-left: 20px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .menu a:hover {
+    color: #1E2672;
+    ;
+  }
 
-
-
+.titlebox {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; 
 }
+
+  .title {
+    color: #1E2672;
+    text-align: center;
+    font-size: 50px;
+}
+
+.registre{
+  text-align: center;
+  margin-top: 25px;
+  list-style: none;
+  border-radius: 20px; /* Adapte o valor conforme necessário para controlar o arredondamento das bordas */
+  padding: 10px;
+  background-color: #1E2672; 
+}
+
+.registre a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  
+
+  }
