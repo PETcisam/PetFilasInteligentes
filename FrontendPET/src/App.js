@@ -5,7 +5,8 @@ import Login from "./Login";
 import Cadastro from "./Cadastro";
 import Grid from "./Grid";
 import HomePaciente from "./PacientePages/HomePaciente";
-
+import HomeAdm from "./AdmPages/HomeAdm";
+import HomeMedico from "./MedicoPages/HomeMedico";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <Routes>
       <Route path="/" element={<Main/>} />
         <Route path="/paciente/home" element={<HomePaciente/>} />
+        <Route path="/medico/home" element={<HomeMedico/>} />
+        <Route path="/adm/home" element={<HomeAdm/>} />
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/grid" element={<Grid />} />
