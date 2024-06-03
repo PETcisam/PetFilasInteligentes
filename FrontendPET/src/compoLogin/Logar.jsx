@@ -17,7 +17,7 @@ const Logar = () => {
         alert(response.data.msg);
         if (response.status === 200) {
           // Redireciona para a página inicial ou dashboard após login bem-sucedido
-          window.location.href = "/dashboard";
+          window.location.href = "/paciente/home";
         }
       })
       .catch((error) => {
