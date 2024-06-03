@@ -4,25 +4,36 @@ import { Link } from 'react-router-dom';
 
 import img1 from './consulamb.jpeg';
 import img2 from './examcirur.jpeg';
+import  imgperfil from './perfilexemplo.jpg'
 
 function HomePaciente(){
+
+  // SIMULANDO UM LOGIN
+  const usuario  = {
+    nome: 'JUAN CAIO',
+    fotoPerfil: imgperfil
+  };
 
     return(
     <div>
       {/* topbar    */}
-    <header className="header">
-      <div className="logo">
-        {/* <img src={} alt="Logo" /> */}
-      </div>
-      <nav className="menu">
-        <ul>
-          <li><a href="/">Inicio</a></li>
-          <li><a href="#option2">Contato</a></li>
-          <li><a href="#option3">Mensagem</a></li>
-          <li><a href="/">Sair</a></li>
-        </ul>
-      </nav>
-    </header>
+      <header className="header">
+        <div className="logo">
+          {/* <img src={} alt="Logo" /> */}
+        </div>
+        <nav className="menu">
+          <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="#option2">Contato</a></li>
+            <li><a href="#option3">Mensagem</a></li>
+            <li><a href="/">Sair</a></li>
+          </ul>
+        </nav>
+        <div className="profile">
+          <img src={usuario.fotoPerfil} alt="Profile" className="profile-image" />
+          <span className="profile-name">{usuario.nome}</span>
+        </div>
+      </header>
 
         {/* barra lateral */}
         <div className="sidebar">
@@ -53,6 +64,9 @@ function HomePaciente(){
             </Link>
           </div>
         </div>
+        {/* rodapé */}
+
+
     
     </div>
 
