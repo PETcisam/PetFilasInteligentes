@@ -2,6 +2,20 @@ import { FaUser, FaCog } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './ConsulAmb.css'
 import img4 from './examcirur.jpeg';
+import img5 from './climaterio.jpg';
+import img6 from './cirurgiageralginecologia.png';
+import img7 from './dentistafop.jpg';
+import img8 from './dentistacisam.jpg';
+import img9 from './dermatologia.jpg';
+import img10 from './endocrinologiaretorno.jpg';
+import img11 from './examedeprevencao.jpg';
+import img12 from './geneticistapediatra.jpg';
+import img13 from './geneticistapediatraretorno.jpg';
+import img14 from './ginecologiaendocrina.jpg';
+import img15 from './ginecologiageral.jpg';
+import img16 from './laqueaduratubaria.jpg';
+import img17 from './mastologia.jpg';
+import img18 from './neuropediatria.jpg';
 
 
 function ConsulAmb(){
@@ -43,31 +57,31 @@ function ConsulAmb(){
                 <div className="consul">
                     <Link to="#/page1">
                         <img src={img4} alt="Consultas Ambulatoriais" className="consul-image" />
-                        <div className="consul-text">Consultas Ambulatoriais</div>
+                        <div className="consul-text">Aleitamento Materno</div>
                     </Link>
                 </div>
                 <div className="consul">
                     <Link to="#/page2">
-                        <img src={img4} alt="Exames e Cirurgias" className="consul-image" />
-                        <div className="consul-text">Exames e Cirurgias</div>
+                        <img src={img5} alt="Exames e Cirurgias" className="consul-image" />
+                        <div className="consul-text">Climatério</div>
                     </Link>
                 </div>
                 <div className="consul">
                     <Link to="#/page2">
-                        <img src={img4} alt="Exames e Cirurgias" className="consul-image" />
-                        <div className="consul-text">Exames e Cirurgias</div>
+                        <img src={img6} alt="Exames e Cirurgias" className="consul-image" />
+                        <div className="consul-text">Cirurgia Geral em Ginecologia - Preparatório</div>
                     </Link>
                 </div>
                 <div className="consul">
                     <Link to="#/page2">
-                        <img src={img4} alt="Exames e Cirurgias" className="consul-image" />
-                        <div className="consul-text">Exames e Cirurgias</div>
+                        <img src={img7} alt="Exames e Cirurgias" className="consul-image" />
+                        <div className="consul-text">Dentista FOP</div>
                     </Link>
                 </div>
                 <div className="consul">
                     <Link to="#/page2">
-                        <img src={img4} alt="Exames e Cirurgias" className="consul-image" />
-                        <div className="consul-text">Exames e Cirurgias</div>
+                        <img src={img8} alt="Exames e Cirurgias" className="consul-image" />
+                        <div className="consul-text">Dentista CISAM</div>
                     </Link>
                 </div>
             </div>
@@ -76,32 +90,32 @@ function ConsulAmb(){
             <div className="consuls2-container">
                 <div className="consul">
                     <Link to="#/page1">
-                        <img src={img4} alt="Consultas Ambulatoriais" className="consul-image" />
-                        <div className="consul-text">Consultas Ambulatoriais</div>
+                        <img src={img9} alt="Consultas Ambulatoriais" className="consul-image" />
+                        <div className="consul-text">Dermatologia</div>
                     </Link>
                 </div>
                 <div className="consul">
                     <Link to="#/page2">
-                        <img src={img4} alt="Exames e Cirurgias" className="consul-image" />
-                        <div className="consul-text">Exames e Cirurgias</div>
+                        <img src={img10} alt="Exames e Cirurgias" className="consul-image" />
+                        <div className="consul-text">Endocrinologia  Retorno</div>
                     </Link>
                 </div>
                 <div className="consul">
                     <Link to="#/page2">
-                        <img src={img4} alt="Exames e Cirurgias" className="consul-image" />
-                        <div className="consul-text">Exames e Cirurgias</div>
+                        <img src={img11} alt="Exames e Cirurgias" className="consul-image" />
+                        <div className="consul-text">Exame de Prevenção</div>
                     </Link>
                 </div>
                 <div className="consul">
                     <Link to="#/page2">
-                        <img src={img4} alt="Exames e Cirurgias" className="consul-image" />
-                        <div className="consul-text">Exames e Cirurgias</div>
+                        <img src={img12} alt="Exames e Cirurgias" className="consul-image" />
+                        <div className="consul-text">Geneticista Pediatra 1* Consulta</div>
                     </Link>
                 </div>
                 <div className="consul">
                     <Link to="#/page2">
-                        <img src={img4} alt="Exames e Cirurgias" className="consul-image" />
-                        <div className="consul-text">Exames e Cirurgias</div>
+                        <img src={img13} alt="Exames e Cirurgias" className="consul-image" />
+                        <div className="consul-text">Geneticista Pediatra Retorno</div>
                     </Link>
                 </div>
             </div>
@@ -111,32 +125,32 @@ function ConsulAmb(){
             <div className="consuls3-container">
                 <div className="consul">
                     <Link to="#/page1">
-                        <img src={img4} alt="Consultas Ambulatoriais" className="consul-image" />
-                        <div className="consul-text">Consultas Ambulatoriais</div>
+                        <img src={img14} alt="Consultas Ambulatoriais" className="consul-image" />
+                        <div className="consul-text">Ginecologista Endócrina</div>
                     </Link>
                 </div>
                 <div className="consul">
                     <Link to="#/page2">
-                        <img src={img4} alt="Exames e Cirurgias" className="consul-image" />
-                        <div className="consul-text">Exames e Cirurgias</div>
+                        <img src={img15} alt="Exames e Cirurgias" className="consul-image" />
+                        <div className="consul-text">Ginecologia Geral 1* Consulta</div>
                     </Link>
                 </div>
                 <div className="consul">
                     <Link to="#/page2">
-                        <img src={img4} alt="Exames e Cirurgias" className="consul-image" />
-                        <div className="consul-text">Exames e Cirurgias</div>
+                        <img src={img16} alt="Exames e Cirurgias" className="consul-image" />
+                        <div className="consul-text">Laqueadura Tubária</div>
                     </Link>
                 </div>
                 <div className="consul">
                     <Link to="#/page2">
-                        <img src={img4} alt="Exames e Cirurgias" className="consul-image" />
-                        <div className="consul-text">Exames e Cirurgias</div>
+                        <img src={img17} alt="Exames e Cirurgias" className="consul-image" />
+                        <div className="consul-text">Mastologia</div>
                     </Link>
                 </div>
                 <div className="consul">
                     <Link to="#/page2">
-                        <img src={img4} alt="Exames e Cirurgias" className="consul-image" />
-                        <div className="consul-text">Exames e Cirurgias</div>
+                        <img src={img18} alt="Exames e Cirurgias" className="consul-image" />
+                        <div className="consul-text">Neuropediatria 1* Consulta</div>
                     </Link>
                 </div>
             </div>
