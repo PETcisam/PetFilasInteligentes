@@ -156,7 +156,7 @@ function HomeAdm() {
     <div className="home-adm">
       {/* sidebar */}
       <div className="sidebar2">
-        <h2 className="title">Solicitações</h2>
+        <h2 className="titlegridpage">Solicitações</h2>
         <h3 className="subtitle">Cirurgias</h3>
         <ul className="menu-list">
           <li className="menu-item">
