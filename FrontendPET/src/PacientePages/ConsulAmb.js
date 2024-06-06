@@ -1,28 +1,28 @@
 import { FaUser, FaCog } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './ConsulAmb.css'
-import img4 from './examcirur.jpeg';
-import img5 from './climaterio.jpg';
-import img6 from './cirurgiageralginecologia.png';
-import img7 from './dentistafop.jpg';
-import img8 from './dentistacisam.jpg';
-import img9 from './dermatologia.jpg';
-import img10 from './endocrinologiaretorno.jpg';
-import img11 from './examedeprevencao.jpg';
-import img12 from './geneticistapediatra.jpg';
-import img13 from './geneticistapediatraretorno.jpg';
-import img14 from './ginecologiaendocrina.jpg';
-import img15 from './ginecologiageral.jpg';
-import img16 from './ginecologistageralretorno.jpg';
-import img17 from './laqueaduratubaria.jpg';
-import img18 from './mastologia.jpg';
-import img19 from './neuropediatria.jpg';
-import img20 from './neuropediatriaretorno.jpg';
-import img21 from './odontologiapediatrica.jpg';
-import img22 from './oftalmologistapediatrico.jpg';
-import img23 from './metodoscontraceptivos.jpg';
-import img24 from './reproducaohumana.jpg';
-import img25 from './reversaodalaqueadura.jpg';
+import img4 from './imgspacient/examcirur.jpeg';
+import img5 from './imgspacient/climaterio.jpg';
+import img6 from './imgspacient/cirurgiageralginecologia.png';
+import img7 from './imgspacient/dentistafop.jpg';
+import img8 from './imgspacient/dentistacisam.jpg';
+import img9 from './imgspacient/dermatologia.jpg';
+import img10 from './imgspacient/endocrinologiaretorno.jpg';
+import img11 from './imgspacient/examedeprevencao.jpg';
+import img12 from './imgspacient/geneticistapediatra.jpg';
+import img13 from './imgspacient/geneticistapediatraretorno.jpg';
+import img14 from './imgspacient/ginecologiaendocrina.jpg';
+import img15 from './imgspacient/ginecologiageral.jpg';
+import img16 from './imgspacient/ginecologistageralretorno.jpg';
+import img17 from './imgspacient/laqueaduratubaria.jpg';
+import img18 from './imgspacient/mastologia.jpg';
+import img19 from './imgspacient/neuropediatria.jpg';
+import img20 from './imgspacient/neuropediatriaretorno.jpg';
+import img21 from './imgspacient/odontologiapediatrica.jpg';
+import img22 from './imgspacient/oftalmologistapediatrico.jpg';
+import img23 from './imgspacient/metodoscontraceptivos.jpg';
+import img24 from './imgspacient/reproducaohumana.jpg';
+import img25 from './imgspacient/reversaodalaqueadura.jpg';
 
 function ConsulAmb() {
 

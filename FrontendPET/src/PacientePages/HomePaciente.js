@@ -2,8 +2,8 @@ import "./HomePaciente1.css"
 import { FaUser, FaCog } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-import img1 from './consulamb.jpeg';
-import img2 from './examcirur.jpeg';
+import img1 from './imgspacient/consulamb.jpeg';
+import img2 from './imgspacient/examcirur.jpeg';
 import  imgperfil from './perfilexemplo.jpg'
 
 function HomePaciente(){
