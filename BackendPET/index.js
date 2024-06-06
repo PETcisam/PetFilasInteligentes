@@ -75,16 +75,16 @@ app.post("/cadastro", (req, res) => {
   });
 });
 
-// Rota para obter todos os usuários "Grid"
-app.get("/usuarios", (req, res) => {
-  const q = "SELECT * FROM usuarios";
+// Rota para buscar as solicitações
+app.get("/solicitacoes", (req, res) => {
+  const query = "SELECT prontuario, nome, cpf, status, prioridade, data, solicitacao, telefone, email FROM solicitacoes";
 
-  db.query(q, (err, data) => {
+  db.query(query, (err, results) => {
     if (err) {
       console.error('Error executing query:', err);
       return res.status(500).json({ msg: 'Database error', error: err });
     }
-    return res.status(200).json(data);
+    return res.status(200).json(results);
   });
 });
 
