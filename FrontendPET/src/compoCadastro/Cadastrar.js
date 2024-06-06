@@ -6,7 +6,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik"; //lib pra gerenciar 
 
 const Cadastrar = () => {
   const handleRegister = (values) => {
-    console.log("Form values:", values); 
+    console.log("Form values:", values);
     Axios.post("http://localhost:8800/register", values)
       .then((response) => {
         console.log("Response:", response);
@@ -14,7 +14,7 @@ const Cadastrar = () => {
       })
       .catch((error) => { //em caso de erro
         console.error("ERRO DE REGISTRO!", error);
-        alert("ERRO NO REGISTRO"); 
+        alert("ERRO NO REGISTRO");
       });
   };
 
@@ -39,10 +39,10 @@ const Cadastrar = () => {
   // falta colocar quebra na coluna, a cada 6 começa outra coluna
   return (
     <div className="container2">
-      <Formik 
-        initialValues={{ 
+      <Formik
+        initialValues={{
           nome: "", bairro: "", nomeMae: "", cidade: "", dataNascimento: "", numeroCNS: "", numeroProntuario: "",
-          email: "", cep: "", cpf: "", ruaResidencia: "", numeroCelular: "", numeroResidencia: "", password: "", complemento: "" 
+          email: "", cep: "", cpf: "", ruaResidencia: "", numeroCelular: "", numeroResidencia: "", password: "", complemento: ""
         }}
         validationSchema={validationsRegister}
         onSubmit={handleRegister}
@@ -50,54 +50,54 @@ const Cadastrar = () => {
         {() => (
           <Form>
             <h1>Cadastro</h1>
-            
+
             <div className="input-cads">
               <Field type="text" name="nome" placeholder="Insira seu nome aqui" />
               <ErrorMessage name="nome" component="div" className="error-message" />
-              
+
               <Field type="text" name="bairro" placeholder="Insira o bairro" />
               <ErrorMessage name="bairro" component="div" className="error-message" />
-              
+
               <Field type="text" name="nomeMae" placeholder="Insira o nome de sua mãe" />
               <ErrorMessage name="nomeMae" component="div" className="error-message" />
-              
+
               <Field type="text" name="cidade" placeholder="Insira a cidade" />
               <ErrorMessage name="cidade" component="div" className="error-message" />
-              
+
               <Field type="date" name="dataNascimento" placeholder="Data de nascimento" />
               <ErrorMessage name="dataNascimento" component="div" className="error-message" />
-              
+
               <Field type="text" name="numeroCNS" placeholder="Número da carteira nacional de saúde" />
               <ErrorMessage name="numeroCNS" component="div" className="error-message" />
-              
+
               <Field type="text" name="numeroProntuario" placeholder="Número de prontuário" />
               <ErrorMessage name="numeroProntuario" component="div" className="error-message" />
-              
+
               <Field type="email" name="email" placeholder="E-mail" />
               <ErrorMessage name="email" component="div" className="error-message" />
-              
+
               <Field type="text" name="cep" placeholder="CEP" />
               <ErrorMessage name="cep" component="div" className="error-message" />
-              
+
               <Field type="text" name="cpf" placeholder="CPF" />
               <ErrorMessage name="cpf" component="div" className="error-message" />
-              
+
               <Field type="text" name="ruaResidencia" placeholder="Rua da residência" />
               <ErrorMessage name="ruaResidencia" component="div" className="error-message" />
-              
+
               <Field type="text" name="numeroCelular" placeholder="Número de celular" />
               <ErrorMessage name="numeroCelular" component="div" className="error-message" />
-              
+
               <Field type="text" name="numeroResidencia" placeholder="Insira o número da residência" />
               <ErrorMessage name="numeroResidencia" component="div" className="error-message" />
-              
+
               <Field type="password" name="password" placeholder="Insira uma senha" />
               <ErrorMessage name="password" component="div" className="error-message" />
-              
+
               <Field type="text" name="complemento" placeholder="Casa, nº do apartamento e etc" />
               <ErrorMessage name="complemento" component="div" className="error-message" />
             </div>
-            
+
             <div className="recall-forget"></div>
             <button type="submit">Cadastrar</button>
           </Form>

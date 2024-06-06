@@ -9,10 +9,10 @@ app.use(express.json());
 
 // Configuração do banco de dados
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "@Henr84989",
-    database: "petcrud",
+  host: "localhost",
+  user: "root",
+  password: "@Henr84989",
+  database: "petcrud",
 });
 
 db.connect((err) => {
@@ -44,7 +44,7 @@ app.post("/login", (req, res) => {
   const { email, password } = req.body;
 
   const q = "SELECT * FROM usuarios WHERE email = ? AND password = ?";
-  
+
   db.query(q, [email, password], (err, data) => {
     if (err) {
       console.error('Error executing query:', err);
@@ -55,6 +55,36 @@ app.post("/login", (req, res) => {
     } else {
       return res.status(401).json({ msg: 'CREDENCIAIS INVÁLIDAS' });
     }
+  });
+});
+
+// Rota de cadastro
+app.post("/cadastro", (req, res) => {
+  const { nome, bairro, nomeMae, cidade, dataNascimento, numeroCNS, numeroProntuario, email, cep, cpf, ruaResidencia, numeroCelular, numeroResidencia, password, complemento } = req.body;
+
+  const insertQuery = "INSERT INTO usuarios (nome, bairro, nomeMae, cidade, dataNascimento, numeroCNS, numeroProntuario, email, cep, cpf, ruaResidencia, numeroCelular, numeroResidencia, password, complemento) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+  const values = [nome, bairro, nomeMae, cidade, dataNascimento, numeroCNS, numeroProntuario, email, cep, cpf, ruaResidencia, numeroCelular, numeroResidencia, password, complemento];
+
+  db.query(insertQuery, values, (err, data) => {
+    if (err) {
+      console.error('Error executing query:', err);
+      return res.status(500).json({ msg: 'Database error', error: err });
+    }
+    return res.status(200).json({ msg: 'USUÁRIO REGISTRADO COM SUCESSO', data });
+  });
+});
+
+// Rota para obter todos os usuários "Grid"
+app.get("/usuarios", (req, res) => {
+  const q = "SELECT * FROM usuarios";
+
+  db.query(q, (err, data) => {
+    if (err) {
+      console.error('Error executing query:', err);
+      return res.status(500).json({ msg: 'Database error', error: err });
+    }
+    return res.status(200).json(data);
   });
 });
 
