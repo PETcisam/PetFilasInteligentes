@@ -60,7 +60,7 @@ const Logar = () => {
             <div className="signup-link">
               <p>
                 Não tem uma conta?{" "}
-                <Link to="/register">
+                <Link to="/cadastro">
                   Registar
                 </Link>
               </p>
