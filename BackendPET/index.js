@@ -75,7 +75,19 @@ app.post("/cadastro", (req, res) => {
   });
 });
 
-// Rota para buscar as solicitações
+// Rota para obter todos os usuários "Grid"
+app.get("/usuarios", (req, res) => {
+  const q = "SELECT * FROM usuarios";
+
+  db.query(q, (err, data) => {
+    if (err) {
+      console.error('Error executing query:', err);
+      return res.status(500).json({ msg: 'Database error', error: err });
+    }
+    return res.status(200).json(data);
+  });
+});
+
 app.get("/solicitacoes", (req, res) => {
   const query = "SELECT prontuario, nome, cpf, status, prioridade, data, solicitacao, telefone, email FROM solicitacoes";
 
@@ -86,7 +98,7 @@ app.get("/solicitacoes", (req, res) => {
     }
     return res.status(200).json(results);
   });
-});
+})
 
 // Iniciando o servidor
 app.listen(8800, () => {
