@@ -48,7 +48,13 @@ const Cadastrar = () => {
         onSubmit={handleRegister}
       >
         {() => (
-          <Form>
+
+
+          
+            <Form>
+
+            <div className="componentecadastro">
+
             <h1>Cadastro</h1>
 
             <div className="input-cads">
@@ -100,10 +106,12 @@ const Cadastrar = () => {
 
             <div className="recall-forget"></div>
             <button type="submit">Cadastrar</button>
-          </Form>
-        )}
-      </Formik>
-    </div>
+          </div>
+        </Form>
+      )}
+    </Formik>
+  </div>
+
   );
 };
 
