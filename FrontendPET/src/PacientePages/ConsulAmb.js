@@ -24,23 +24,35 @@ import img23 from './imgspacient/metodoscontraceptivos.jpg';
 import img24 from './imgspacient/reproducaohumana.jpg';
 import img25 from './imgspacient/reversaodalaqueadura.jpg';
 
+import  imgperfil from './imgspacient/perfilexemplo.jpg'
+
 function ConsulAmb() {
+
+    // SIMULANDO UM LOGIN
+  const usuario  = {
+    nome: 'JUAN CAIO',
+    fotoPerfil: imgperfil
+  };
 
     return (
         <div>
             {/* topbar    */}
-            <header className="header d-flex justify-content-end">
+            <header className="header">
+                <div className="logo">
+                    {/* <img src={} alt="Logo" /> */}
+                </div>
                 <nav className="menu">
-                    <div className="logo">
-                        {/* <img src={} alt="Logo" /> */}
-                    </div>
                     <ul>
                         <li><a href="/">Inicio</a></li>
-                        <li><a href="#consul2">Contato</a></li>
-                        <li><a href="#consul3">Mensagem</a></li>
+                        <li><a href="#option2">Contato</a></li>
+                        <li><a href="#option3">Mensagem</a></li>
                         <li><a href="/">Sair</a></li>
                     </ul>
                 </nav>
+                <div className="profile">
+                    <img src={usuario.fotoPerfil} alt="Profile" className="profile-image" />
+                    <span className="profile-name">{usuario.nome}</span>
+                </div>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></link>
                 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

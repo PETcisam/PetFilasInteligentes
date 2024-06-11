@@ -1,3 +1,5 @@
+
+
 .consuls-container, .consuls2-container, .consuls3-container {
   display: block;
   justify-content: center;
@@ -26,13 +28,17 @@
 
 .consul-image {
   max-width: 100%;
-  height: auto;
+  height: 180px;
+  width: 180px;
   border-radius: 10px;
 }
 
 .consul-text {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   color: #333;
+}
+.col{
+  margin-bottom: 60px;
 }
