@@ -67,29 +67,29 @@ function ConsulAmb() {
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/almaterno">
                                 <img src={img4} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Aleitamento Materno</div>
                             </Link>
                         </div>
                         <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/climaterio">
                                 <img src={img5} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Climatério</div>
                             </Link>
                         </div>
                         <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/cirurgiagineco">
                                 <img src={img6} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Cirurgia Geral em Ginecologia - Preparatório</div>
                             </Link>
                         </div>                        <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/dentistafop">
                                 <img src={img7} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Dentista FOP</div>
                             </Link>
                         </div>                        <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/dentistacisam">
                                 <img src={img8} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Dentista CISAM</div>
                             </Link>
@@ -97,91 +97,91 @@ function ConsulAmb() {
                     </div>
                     <div class="row">
                         <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/dermatologia">
                                 <img src={img9} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Dermatologia</div>
                             </Link>
                         </div>
                         <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/endocrinoretorno">
                                 <img src={img10} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Endocrinologista Retorno</div>
                             </Link>
                         </div>                        <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/exameprevencao">
                                 <img src={img11} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Exame de Prevenção</div>
                             </Link>
                         </div>
                         <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/geneticistapri">
                                 <img src={img12} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Geneticista Pediatra 1* Consulta</div>
                             </Link>
                         </div>
                         <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/geneticistavolta">
                                 <img src={img13} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Geneticista Pediatra Retorno</div>
                             </Link>
                         </div>
                     </div>                    <div class="row">
                         <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/ginecoendo">
                                 <img src={img14} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Ginecologista Endócrina</div>
                             </Link>
                         </div>
                         <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/ginecogeral1">
                                 <img src={img15} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Ginecologista Geral 1* Consulta</div>
                             </Link>
                         </div>                        <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/ginecogeralvolta">
                                 <img src={img16} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Ginecologista Geral Retorno</div>
                             </Link>
                         </div>
                         <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/laqueaduratuba">
                                 <img src={img17} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Laqueadura Tubária</div>
                             </Link>
                         </div>
                         <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/mastologia">
                                 <img src={img18} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Mastologia</div>
                             </Link>
                         </div>
                     </div>                    <div class="row">
                         <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/neuropediatria1">
                                 <img src={img19} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Neuropediatria 1* Consulta</div>
                             </Link>
                         </div>
                         <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/neuropediatriavolta">
                                 <img src={img20} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Neuropediatria Retorno</div>
                             </Link>
                         </div>
                         <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/odontop">
                                 <img src={img21} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Odonotologia Pediátrica</div>
                             </Link>
                         </div>
                         <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/oftalmoP">
                                 <img src={img22} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Oftalmologista Pediátrica</div>
                             </Link>
                         </div>
                         <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/metodoscontra">
                                 <img src={img23} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Métodos Contraceptivos</div>
                             </Link>
@@ -189,13 +189,13 @@ function ConsulAmb() {
                     </div>
                     <div class="row">
                         <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/reprohumana">
                                 <img src={img24} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Reprodução Humana</div>
                             </Link>
                         </div>
                         <div class="col">
-                            <Link to="#/page2">
+                            <Link to="/paciente/consultas/reversaolaque">
                                 <img src={img25} alt="Exames e Cirurgias" className="consul-image" />
                                 <div className="consul-text">Reversão da Lqueadura</div>
                             </Link>
