@@ -47,6 +47,10 @@ function AlMaterno(){
           <FaCog />
         </div>
       </div>
+      {/* esse title é universal, temos que criar uma div universal para o titulo tb =, ajustando margem e etc */}
+      <div className='titulosamb'>
+        <h1 className='title'>Aleitamento Materno</h1>
+      </div>
       </div>
     )
 
