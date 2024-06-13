@@ -6,6 +6,7 @@ import Cadastro from "./Cadastro";
 
 import HomePaciente from "./PacientePages/HomePaciente";
 import ConsulAmb from "./PacientePages/ConsulAmb";
+import ExameCirurgia from "./PacientePages/ExameCirurgia";
 
 import AlMaterno from "./PacientePages/Pagesconsultasamb/AlMaterno";
 import CirurgiaGineco from "./PacientePages/Pagesconsultasamb/CirurgiaGineco";
@@ -42,6 +43,12 @@ function App() {
       <Route path="/" element={<Main/>} />
         {/* pacientes */}
         <Route path="/paciente/home" element={<HomePaciente/>} />
+
+
+
+        <Route path="/paciente/exames" element={<ExameCirurgia/>} />
+
+
 
         <Route path="/paciente/consultas" element={<ConsulAmb/>} />
 

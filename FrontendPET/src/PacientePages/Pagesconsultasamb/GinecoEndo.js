@@ -45,6 +45,9 @@ function GinecoEndo(){
           <FaCog />
         </div>
       </div>
+      <div className='titulosamb'>
+        <h1 className='title'>Ginecologista Endócrina</h1>
+      </div>
       </div>
     )
 

@@ -45,6 +45,9 @@ function ReversaoLaque(){
           <FaCog />
         </div>
       </div>
+      <div className='titulosamb'>
+        <h1 className='title'>Reversão da Laqueadura</h1>
+      </div>
       </div>
     )
 

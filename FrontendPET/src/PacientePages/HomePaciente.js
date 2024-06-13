@@ -58,7 +58,7 @@ function HomePaciente(){
             </Link>
           </div>
           <div className="option">
-            <Link to="#/page2">
+            <Link to="/paciente/exames">
               <img src={img2} alt="Exames e Cirurgias" className="option-image" />
               <div className="option-text">Exames e Cirurgias</div>
             </Link>

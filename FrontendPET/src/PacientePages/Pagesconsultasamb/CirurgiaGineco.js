@@ -46,6 +46,9 @@ function CirurgiaGineco(){
           <FaCog />
         </div>
       </div>
+      <div className='titulosamb'>
+        <h1 className='title'>Cirurgia Geral em Ginecologia</h1>
+      </div>
       </div>
     )
 

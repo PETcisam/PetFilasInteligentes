@@ -46,6 +46,9 @@ function LaqueaduraTuba(){
           <FaCog />
         </div>
       </div>
+      <div className='titulosamb'>
+        <h1 className='title'>Laqueadura Tubária</h1>
+      </div>
       </div>
     )
 

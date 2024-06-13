@@ -45,6 +45,9 @@ function OftalmoP(){
           <FaCog />
         </div>
       </div>
+      <div className='titulosamb'>
+        <h1 className='title'>Oftalmologia Pediátrica</h1>
+      </div>
       </div>
     )
 

@@ -45,6 +45,9 @@ function GinecoGeralVolta(){
           <FaCog />
         </div>
       </div>
+      <div className='titulosamb'>
+        <h1 className='title'>Ginecologista Geral - Retorno</h1>
+      </div>
       </div>
     )
 

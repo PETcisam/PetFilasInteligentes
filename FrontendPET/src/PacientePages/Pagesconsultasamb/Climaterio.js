@@ -45,6 +45,9 @@ function Climaterio(){
           <FaCog />
         </div>
       </div>
+      <div className='titulosamb'>
+        <h1 className='title'>Climatério</h1>
+      </div>
       </div>
     )
 

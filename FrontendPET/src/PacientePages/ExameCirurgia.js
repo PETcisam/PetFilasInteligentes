@@ -1,10 +1,9 @@
 import { FaUser, FaCog } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import  imgperfil from './imgspacient/perfilexemplo.jpg'
 
+function ExameCirurgia(){
 
-import  imgperfil from '../imgspacient/perfilexemplo.jpg'
-
-function ReproHumana(){
 
     // SIMULANDO UM LOGIN
   const usuario  = {
@@ -14,8 +13,7 @@ function ReproHumana(){
 
 
     return(
-
-      <div>
+        <div>
       {/* topbar    */}
       <header className="header">
         <div className="logo">
@@ -45,12 +43,10 @@ function ReproHumana(){
           <FaCog />
         </div>
       </div>
-      <div className='titulosamb'>
-        <h1 className='title'>Reprodução Humana</h1>
-      </div>
+      {/* objeto central */}
+      {/* colocar aqui os blocos */}
       </div>
     )
-
 }
 
-export default ReproHumana;
+export default ExameCirurgia;

@@ -45,6 +45,9 @@ function ExamePrevencao(){
           <FaCog />
         </div>
       </div>
+      <div className='titulosamb'>
+        <h1 className='title'>Exame de Prevenção</h1>
+      </div>
       </div>
     )
 

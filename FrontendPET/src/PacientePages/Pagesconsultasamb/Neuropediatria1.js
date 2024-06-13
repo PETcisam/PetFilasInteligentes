@@ -45,6 +45,9 @@ function Neuropediatria1(){
           <FaCog />
         </div>
       </div>
+      <div className='titulosamb'>
+        <h1 className='title'>Neuropediatria - 1 Consulta</h1>
+      </div>
       </div>
     )
 

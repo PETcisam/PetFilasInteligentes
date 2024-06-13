@@ -45,6 +45,9 @@ function GinecoGeral1(){
           <FaCog />
         </div>
       </div>
+      <div className='titulosamb'>
+        <h1 className='title'>Ginecologista Geral - 1 Consulta</h1>
+      </div>
       </div>
     )
 
