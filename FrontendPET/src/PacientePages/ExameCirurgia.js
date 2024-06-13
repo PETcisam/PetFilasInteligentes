@@ -2,6 +2,11 @@ import { FaUser, FaCog } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import  imgperfil from './imgspacient/perfilexemplo.jpg'
 
+import img26 from './imgspacient/histerodiagex.jpeg';
+import img27 from './imgspacient/histerocex.jpeg';
+import img28 from './imgspacient/laqueaex.jpeg';
+import img29 from './imgspacient/cirurgiaginecoex.jpeg';
+
 function ExameCirurgia(){
 
 
@@ -44,7 +49,34 @@ function ExameCirurgia(){
         </div>
       </div>
       {/* objeto central */}
-      {/* colocar aqui os blocos */}
+      
+     <div className='grid-container2'>
+          <div class="coluna1">
+            <Link to="#page2">
+              <img src={img26} alt="Exames e Cirurgias" className="consul-image" />
+              <div className="consul-text">Histeroscopia Diagnóstica</div>
+            </Link>
+
+            <Link to="#page2">
+              <img src={img27} alt="Exames e Cirurgias" className="consul-image" />
+              <div className="consul-text">Histeroscopia Cirúrgica</div>
+            </Link>
+
+          </div>
+
+          <div class="coluna2">
+            <Link to="#page2">
+              <img src={img28} alt="Exames e Cirurgias" className="consul-image" />
+              <div className="consul-text">Cirurgia Laqueadura Tubária</div>
+            </Link>
+
+            <Link to="#page2">
+              <img src={img29} alt="Exames e Cirurgias" className="consul-image" />
+              <div className="consul-text">Cirurgia Ginecologia Geral</div>
+            </Link>
+
+          </div>
+     </div>
       </div>
     )
 }
