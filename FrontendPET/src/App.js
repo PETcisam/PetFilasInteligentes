@@ -8,29 +8,7 @@ import HomePaciente from "./PacientePages/HomePaciente";
 import ConsulAmb from "./PacientePages/ConsulAmb";
 import ExameCirurgia from "./PacientePages/ExameCirurgia";
 
-import AlMaterno from "./PacientePages/Pagesconsultasamb/AlMaterno";
-import CirurgiaGineco from "./PacientePages/Pagesconsultasamb/CirurgiaGineco";
-import Climaterio from "./PacientePages/Pagesconsultasamb/Climaterio";
-import DentistaCisam from "./PacientePages/Pagesconsultasamb/DentistaCisam";
-import DentistaFop from "./PacientePages/Pagesconsultasamb/DentistaFop";
-import Dermatologia from "./PacientePages/Pagesconsultasamb/Dermatologia";
-import EndocrinoRetorno from "./PacientePages/Pagesconsultasamb/EndocrinoRetorno";
-import ExamePrevencao from "./PacientePages/Pagesconsultasamb/ExamePrevencao";
-import GeneticistaPri from "./PacientePages/Pagesconsultasamb/GeneticistaPri";
-import GeneticistaVolta from "./PacientePages/Pagesconsultasamb/GeneticistaVolta";
-import GinecoEndo from "./PacientePages/Pagesconsultasamb/GinecoEndo";
-import GinecoGeral1 from "./PacientePages/Pagesconsultasamb/GinecoGeral1";
-import GinecoGeralVolta from "./PacientePages/Pagesconsultasamb/GinecoGeralVolta";
-import LaqueaduraTuba from "./PacientePages/Pagesconsultasamb/LaqueaduraTuba";
-import Mastologia from "./PacientePages/Pagesconsultasamb/Mastologia";
-import MetodosContra from "./PacientePages/Pagesconsultasamb/MetodosContra";
-import Neuropediatria1 from "./PacientePages/Pagesconsultasamb/Neuropediatria1";
-import NeuropediatriaVolta from "./PacientePages/Pagesconsultasamb/NeuropediatriaVolta";
-import OdontoP from "./PacientePages/Pagesconsultasamb/OdontoP";
-import OftalmoP from "./PacientePages/Pagesconsultasamb/OftalmoP";
-import ReproHumana from "./PacientePages/Pagesconsultasamb/ReproHumana";
-import ReversaoLaque from "./PacientePages/Pagesconsultasamb/ReversaoLaque";
-
+import { AlMaterno, CirurgiaGineco, Climaterio, DentistaCisam, DentistaFop, Dermatologia, EndocrinoRetorno, ExamePrevencao, GeneticistaPri, GeneticistaVolta, GinecoEndo, GinecoGeral1, GinecoGeralVolta, LaqueaduraTuba, Mastologia, MetodosContra, Neuropediatria1, NeuropediatriaVolta, OdontoP, OftalmoP, ReproHumana, ReversaoLaque } from './PacientePages/ConsultasAmbs';
 
 import HomeAdm from "./AdmPages/HomeAdm";
 import HomeMedico from "./MedicoPages/HomeMedico";
