@@ -1,6 +1,10 @@
 import express from "express";
 import mysql from "mysql";
 import cors from "cors";
+import authRoutes from './routes/authRoutes';
+import medicoRoutes from './routes/medicoRoutes';
+import pacienteRoutes from './routes/pacienteRoutes';
+import adminRoutes from './routes/adminRoutes';
 
 // Configuração do servidor
 const app = express();
@@ -22,6 +26,12 @@ db.connect((err) => {
     console.log('Conectado ao banco de dados');
   }
 });
+
+// Rotas
+app.use('/api/auth', authRoutes);
+app.use('/api/medico', medicoRoutes);
+app.use('/api/paciente', pacienteRoutes);
+app.use('/api/admin', adminRoutes);
 
 // Rota de registro
 app.post("/register", (req, res) => {
