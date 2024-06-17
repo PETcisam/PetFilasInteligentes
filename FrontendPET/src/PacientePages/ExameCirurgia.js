@@ -53,26 +53,26 @@ function ExameCirurgia(){
      <div className='grid-container2'>
           <div class="coluna1">
             <Link to="#page2">
-              <img src={img26} alt="Exames e Cirurgias" className="consul-image" />
-              <div className="consul-text">Histeroscopia Diagnóstica</div>
+              <img src={img26} alt="Exames e Cirurgias" className="consul-image2" />
+              <div className="consul-text2">Histeroscopia Diagnóstica</div>
             </Link>
 
             <Link to="#page2">
-              <img src={img27} alt="Exames e Cirurgias" className="consul-image" />
-              <div className="consul-text">Histeroscopia Cirúrgica</div>
+              <img src={img27} alt="Exames e Cirurgias" className="consul-image2" />
+              <div className="consul-text2">Histeroscopia Cirúrgica</div>
             </Link>
 
           </div>
 
           <div class="coluna2">
             <Link to="#page2">
-              <img src={img28} alt="Exames e Cirurgias" className="consul-image" />
-              <div className="consul-text">Cirurgia Laqueadura Tubária</div>
+              <img src={img28} alt="Exames e Cirurgias" className="consul-image2" />
+              <div className="consul-text2">Cirurgia Laqueadura Tubária</div>
             </Link>
 
             <Link to="#page2">
-              <img src={img29} alt="Exames e Cirurgias" className="consul-image" />
-              <div className="consul-text">Cirurgia Ginecologia Geral</div>
+              <img src={img29} alt="Exames e Cirurgias" className="consul-image2" />
+              <div className="consul-text2">Cirurgia Ginecologia Geral</div>
             </Link>
 
           </div>

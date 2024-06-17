@@ -1,4 +1,4 @@
-
+/* 
 
 .container2 {
   width: 450px;
@@ -100,10 +100,10 @@
 
 .signup-link p a:hover {
   text-decoration: underline;
-}
+} */
 
 /* ta mudando todas as paginas, e tem prioridade maxima */
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -119,4 +119,4 @@
   background-color: #05294BD9;
   background-size: contain;
   background-position: center;
-}
+} */

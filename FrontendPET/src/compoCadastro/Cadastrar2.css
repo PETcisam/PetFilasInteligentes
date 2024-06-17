@@ -1,0 +1,76 @@
+/* Estilos CSS */
+
+.containercadastro {
+  width: 100%;
+  height: 100vh; /* Usando 100vh para ocupar toda a altura da tela */
+  display: flex;
+}
+
+.boxazul {
+  width: 40%;
+  height: 100%; 
+  background-color: #1E2672; 
+}
+
+.bemvindo {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 30px;
+}
+
+.bemvindorodape {
+  color: white;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.textosbox {
+  margin-top: 30%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.formulariocadastro {
+  width: 60%;
+  height: 100%; /* Ocupa toda a altura da tela */
+  background-color: white;
+  padding: 20px; /* Adiciona um espaçamento interno */
+}
+
+.dadospessoais,
+.dadosendereco,
+.dadoscomplementares,
+.documentosnecessarios {
+  margin-bottom: 20px; /* Espaçamento entre seções */
+}
+
+.campo {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+.subtitleform{
+  font-size: 15px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: calc(20% - 20px); /* 100% do container menos o espaçamento */
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border-color: #1E2672; /* Cor do foco */
+}
