@@ -14,7 +14,7 @@ function Cadastrar2() {
 
       <div className="formulariocadastro">
         <div className="compontitlecads">
-          <h1 className="title">Cadastre-se aqui!</h1>
+          <h1 className="titlecadastro">Cadastre-se aqui!</h1>
         </div>
         <div className="dadospessoais">
           <h3 className="subtitleform">Dados Pessoais</h3>
@@ -111,10 +111,7 @@ function Cadastrar2() {
               <label>Data de Nascimento:</label>
               <input type="text" />
             </div>
-            <div className="campo">
-              <label>Número de Celular:</label>
-              <input type="text" />
-            </div>
+            
 
           </div>
 
@@ -125,15 +122,7 @@ function Cadastrar2() {
               <label>Nome completo da Mãe:</label>
               <input type="text" />
             </div>
-            <div className="campo">
-              <label>CPF:</label>
-              <input type="text" />
-            </div>
-            <div className="campo">
-              <label>Email:</label>
-              <input type="text" />
-            </div>
-
+            
           </div>
         </div>
 

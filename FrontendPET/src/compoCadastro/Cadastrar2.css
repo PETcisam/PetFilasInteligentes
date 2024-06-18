@@ -1,4 +1,8 @@
-/* Estilos CSS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+  height: 100%;
+}
 
 .containercadastro {
   width: 100%;
@@ -12,8 +16,28 @@
   background-color: #1E2672; 
 }
 
+.compontitlecads{
+  align-items: center;
+  margin-top: 0px;
+}
+
+.titlecadastro{
+
+  font-size: 50px;
+  color:#1E2672 ;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 10px;
+ justify-content: space-around;
+  display: flex;
+
+
+}
+
 .bemvindo {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
   color: white;
   font-size: 30px;
 }
@@ -21,7 +45,8 @@
 .bemvindorodape {
   color: white;
   font-size: 15px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
 }
 
 .textosbox {
@@ -45,8 +70,9 @@
 .dadosendereco,
 .dadoscomplementares,
 .documentosnecessarios {
+
   margin-left: 20px;
-  margin-bottom: 20px; /* Espaçamento entre seções */
+  margin-bottom: 0px; 
 }
 
 .campo {
@@ -54,16 +80,25 @@
 }
 
 label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  margin-left: 20px;
   display: block;
   margin-bottom: 5px;
   font-size: 13px;
 }
 
 .subtitleform{
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 1000;
   font-size: 15px;
+  color: black;
 }
 
 input[type="text"] {
+  margin-left: 20px;
   height: 60%;
   width: calc(100% - 20px); 
   padding: 8px;
