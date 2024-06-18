@@ -13,43 +13,128 @@ function Cadastrar2() {
       </div>
 
       <div className="formulariocadastro">
+        <div className="compontitlecads">
+          <h1 className="title">Cadastre-se aqui!</h1>
+        </div>
         <div className="dadospessoais">
           <h3 className="subtitleform">Dados Pessoais</h3>
-          <div className="campo">
-            <label>Nome:</label>
-            <input type="text" />
+         
+          <div className="linhainputs">
+
+
+            <div className="campo">
+              <label>Nome Completo:</label>
+              <input type="text" />
+            </div>
+            <div className="campo">
+              <label>Data de Nascimento:</label>
+              <input type="text" />
+            </div>
+            <div className="campo">
+              <label>Número de Celular:</label>
+              <input type="text" />
+            </div>
+
           </div>
-          <div className="campo">
-            <label>Email:</label>
-            <input type="email" />
+
+          <div className="linhainputs">
+
+
+            <div className="campo">
+              <label>Nome completo da Mãe:</label>
+              <input type="text" />
+            </div>
+            <div className="campo">
+              <label>CPF:</label>
+              <input type="text" />
+            </div>
+            <div className="campo">
+              <label>text:</label>
+              <input type="text" />
+            </div>
+
           </div>
-          {/* Outros campos pessoais */}
+         
         </div>
 
         <div className="dadosendereco">
           <h3 className="subtitleform" >Dados de Endereço</h3>
-          <div className="campo">
-            <label>Rua:</label>
-            <input type="text" />
+
+          <div className="linhainputs">
+
+
+            <div className="campo">
+              <label>Nome Completo:</label>
+              <input type="text" />
+            </div>
+            <div className="campo">
+              <label>Data de Nascimento:</label>
+              <input type="text" />
+            </div>
+            <div className="campo">
+              <label>Número de Celular:</label>
+              <input type="text" />
+            </div>
+
           </div>
-          <div className="campo">
-            <label>Cidade:</label>
-            <input type="text" />
+
+          <div className="linhainputs">
+
+
+            <div className="campo">
+              <label>Nome completo da Mãe:</label>
+              <input type="text" />
+            </div>
+            <div className="campo">
+              <label>CPF:</label>
+              <input type="text" />
+            </div>
+            <div className="campo">
+              <label>text:</label>
+              <input type="text" />
+            </div>
+
           </div>
-          {/* Outros campos de endereço */}
         </div>
 
         <div className="dadoscomplementares">
           <h3 className="subtitleform" >Dados Complementares</h3>
-          <div className="campo">
-            <label>Profissão:</label>
-            <input type="text" />
+
+          <div className="linhainputs">
+
+
+            <div className="campo">
+              <label>Nome Completo:</label>
+              <input type="text" />
+            </div>
+            <div className="campo">
+              <label>Data de Nascimento:</label>
+              <input type="text" />
+            </div>
+            <div className="campo">
+              <label>Número de Celular:</label>
+              <input type="text" />
+            </div>
+
           </div>
-          <div className="campo">
-            <label>Telefone:</label>
-            <input type="text" />
+
+          <div className="linhainputs">
+
+
+            <div className="campo">
+              <label>Nome completo da Mãe:</label>
+              <input type="text" />
+            </div>
+            <div className="campo">
+              <label>CPF:</label>
+              <input type="text" />
+            </div>
+            <div className="campo">
+              <label>Email:</label>
+              <input type="text" />
+            </div>
+
           </div>
-          {/* Outros campos complementares */}
         </div>
 
         <div className="documentosnecessarios">

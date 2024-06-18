@@ -6,6 +6,7 @@ import Cadastro from "./Cadastro";
 
 import HomePaciente from "./PacientePages/HomePaciente";
 import ConsulAmb from "./PacientePages/ConsulAmb";
+import PerfilPaciente from "./PacientePages/PerfilPaciente";
 import ExameCirurgia from "./PacientePages/ExameCirurgia";
 
 import { AlMaterno, CirurgiaGineco, Climaterio, DentistaCisam, DentistaFop, Dermatologia, EndocrinoRetorno, ExamePrevencao, GeneticistaPri, GeneticistaVolta, GinecoEndo, GinecoGeral1, GinecoGeralVolta, LaqueaduraTuba, Mastologia, MetodosContra, Neuropediatria1, NeuropediatriaVolta, OdontoP, OftalmoP, ReproHumana, ReversaoLaque } from './PacientePages/ConsultasAmbs';
@@ -29,6 +30,8 @@ function App() {
 
 
         <Route path="/paciente/consultas" element={<ConsulAmb/>} />
+
+        <Route path="/paciente/perfil" element={<PerfilPaciente/>} />
 
                 {/* consultas ambulatoriais */}
 
