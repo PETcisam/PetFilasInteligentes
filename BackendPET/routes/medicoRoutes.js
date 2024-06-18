@@ -1,9 +1,12 @@
+//Rotas específicas para médicos.
 import express from 'express';
-import { getSolicitacoesMedico } from '../controllers/medicoController';
-import { verifyToken, checkRole } from '../middleware/auth';
+import { getAllPatients } from '../controllers/medicoController.js';
+import { authenticateToken, authorizeRoles } from '../middleware/auth.js';
+import { roles } from '../config/roles.js';
 
 const router = express.Router();
 
-router.get('/solicitacoes', verifyToken, checkRole(['Medico']), getSolicitacoesMedico);
+// Rota para obter todos os pacientes - apenas médicos e admins
+router.get('/pacientes', authenticateToken, authorizeRoles(roles.MEDICO, roles.ADM, roles.ADM_MAXIMO), getAllPatients);
 
 export default router;

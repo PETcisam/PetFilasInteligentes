@@ -13,7 +13,6 @@ function HomePaciente(){
     nome: 'JUAN CAIO',
     fotoPerfil: imgperfil
   };
-
     return(
     <div>
       {/* topbar    */}
@@ -34,7 +33,6 @@ function HomePaciente(){
           <span className="profile-name">{usuario.nome}</span>
         </div>
       </header>
-
         {/* barra lateral */}
         <div className="sidebar">
         <div className="icon profile-icon">
@@ -45,7 +43,6 @@ function HomePaciente(){
           <FaCog />
         </div>
       </div>
-
       {/* objeto central */}
         <div className="titulohomepdiv">
           <h1 className="titulohomep">Central de Agendamento</h1>
@@ -65,12 +62,7 @@ function HomePaciente(){
           </div>
         </div>
         {/* rodapé */}
-
-
-    
     </div>
-
     );
 }
-
 export default HomePaciente;

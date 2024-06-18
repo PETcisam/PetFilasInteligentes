@@ -1,12 +1,11 @@
-function PerfilPaciente(){
+function PerfilPaciente({  }) {
+    return (
+      <div>
+        
+        okioioi
 
-    return(
-        <div>       
-
-            perfil paciente
-
-        </div>
-    )
-}
-
-export default PerfilPaciente
+      </div>
+    );
+  }
+  
+  export default PerfilPaciente;

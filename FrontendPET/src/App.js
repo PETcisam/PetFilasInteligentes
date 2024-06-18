@@ -7,6 +7,7 @@ import Cadastro from "./Cadastro";
 import HomePaciente from "./PacientePages/HomePaciente";
 import ConsulAmb from "./PacientePages/ConsulAmb";
 import PerfilPaciente from "./PacientePages/PerfilPaciente";
+import PerfilMedico from "./MedicoPages/PerfilMedico";
 import ExameCirurgia from "./PacientePages/ExameCirurgia";
 
 import { AlMaterno, CirurgiaGineco, Climaterio, DentistaCisam, DentistaFop, Dermatologia, EndocrinoRetorno, ExamePrevencao, GeneticistaPri, GeneticistaVolta, GinecoEndo, GinecoGeral1, GinecoGeralVolta, LaqueaduraTuba, Mastologia, MetodosContra, Neuropediatria1, NeuropediatriaVolta, OdontoP, OftalmoP, ReproHumana, ReversaoLaque } from './PacientePages/ConsultasAmbs';
@@ -22,16 +23,10 @@ function App() {
       <Route path="/" element={<Main/>} />
         {/* pacientes */}
         <Route path="/paciente/home" element={<HomePaciente/>} />
-
-
-
         <Route path="/paciente/exames" element={<ExameCirurgia/>} />
-
-
-
         <Route path="/paciente/consultas" element={<ConsulAmb/>} />
-
         <Route path="/paciente/perfil" element={<PerfilPaciente/>} />
+        <Route path="/medico/perfil" element={<PerfilMedico/>} />
 
                 {/* consultas ambulatoriais */}
 
@@ -58,7 +53,6 @@ function App() {
                 <Route path="/paciente/consultas/reprohumana" element={<ReproHumana />} />
                 <Route path="/paciente/consultas/reversaolaque" element={<ReversaoLaque />} />
 
-
         {/* medicos */}
         <Route path="/medico/home" element={<HomeMedico/>} />
 
@@ -68,9 +62,7 @@ function App() {
         {/* gerais */}
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
-        
       </Routes>
-     
     </Router>
   );
 }

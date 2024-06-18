@@ -1,1 +1,0 @@
-//era so para ser a conexao com o banco

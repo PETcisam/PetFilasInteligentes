@@ -1,7 +1,10 @@
-import { db } from '../config/db';
+//Controlador para operações de médicos.
+import mysql from 'mysql';
+import { db } from '../config/db.js';  // Certifique-se de exportar o db da configuração
 
-export const getSolicitacoesMedico = (req, res) => {
-  const query = "SELECT prontuario, nome, cpf, status, prioridade, data, solicitacao, telefone, email FROM solicitacoes WHERE perfil = 'Medico'";
+// Função para obter todos os pacientes
+export const getAllPatients = (req, res) => {
+  const query = "SELECT nome, bairro, nomeMae, cidade, dataNascimento, numeroCNS, numeroProntuario, email, cep, cpf, ruaResidencia, numeroCelular, numeroResidencia, complemento FROM usuarios WHERE role = 'PACIENTE'";
 
   db.query(query, (err, results) => {
     if (err) {

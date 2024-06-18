@@ -1,9 +1,15 @@
+// Rotas específicas para administradores.
 import express from 'express';
-import { getSolicitacoesAdmin } from '../controllers/adminController';
-import { verifyToken, checkRole } from '../middleware/auth';
+import { authenticateToken, authorizeRoles } from '../middleware/auth';
+import { getAllUsers, createUser, updateUser, deleteUser } from '../controllers/adminController';
 
 const router = express.Router();
 
-router.get('/solicitacoes', verifyToken, checkRole(['Administrador']), getSolicitacoesAdmin);
+router.use(authenticateToken);
+
+router.get('/', authorizeRoles('adm', 'adm_maximo'), getAllUsers);
+router.post('/', authorizeRoles('adm_maximo'), createUser);
+router.put('/:id', authorizeRoles('adm_maximo'), updateUser);
+router.delete('/:id', authorizeRoles('adm_maximo'), deleteUser);
 
 export default router;

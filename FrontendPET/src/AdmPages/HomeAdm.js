@@ -6,16 +6,21 @@ import "./HomeAdm.css";
 
 function HomeAdm() {
   const [data, setData] = useState([]);
+  const token = localStorage.getItem('accessToken'); // Supondo que o token seja armazenado no localStorage
 
   useEffect(() => {
-    axios.get("http://localhost:8800/solicitacoes")
-      .then(response => {
-        setData(response.data);
-      })
-      .catch(error => {
-        console.error('Error fetching data:', error);
-      });
-  }, []);
+    axios.get("http://localhost:8800/solicitacoes", {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    })
+    .then(response => {
+      setData(response.data);
+    })
+    .catch(error => {
+      console.error('Error fetching data:', error);
+    });
+  }, [token]);
 
   return (
     <div className="home-adm">
@@ -101,4 +106,5 @@ function HomeAdm() {
     </div>
   );
 }
+
 export default HomeAdm;

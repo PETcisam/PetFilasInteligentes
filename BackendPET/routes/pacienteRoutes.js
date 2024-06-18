@@ -1,9 +1,12 @@
+//Rotas específicas para pacientes.
 import express from 'express';
-import { getSolicitacoesPaciente } from '../controllers/pacienteController';
-import { verifyToken, checkRole } from '../middleware/auth';
+import { getPatientData } from '../controllers/pacienteController.js';
+import { authenticateToken, authorizeRoles } from '../middleware/auth.js';
+import { roles } from '../config/roles.js';
 
 const router = express.Router();
 
-router.get('/solicitacoes', verifyToken, checkRole(['Paciente']), getSolicitacoesPaciente);
+// Rota para obter os dados do próprio paciente
+router.get('/me', authenticateToken, authorizeRoles(roles.PACIENTE, roles.ADM, roles.ADM_MAXIMO), getPatientData);
 
 export default router;

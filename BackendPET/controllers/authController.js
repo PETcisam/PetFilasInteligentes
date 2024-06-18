@@ -1,40 +1,37 @@
-//para registro e login
-import bcrypt from 'bcryptjs';
+// Controlador para autenticação (login, registro).
 import jwt from 'jsonwebtoken';
-import { db } from '../config/db';
-import { JWT_SECRET } from '../config/constants';
+import { ACCESS_TOKEN_SECRET } from '../config/constants';
 
-export const register = async (req, res) => {
-  const { nome, email, password, cpf, perfil } = req.body;
-  const hashedPassword = await bcrypt.hash(password, 10);
-  const values = [nome, email, hashedPassword, String(cpf), perfil];
+export const login = (req, res) => {
+  const { email, password } = req.body;
+  const q = "SELECT * FROM usuarios WHERE email = ? AND password = ?";
 
-  const q = "INSERT INTO usuarios (`nome`, `email`, `password`, `cpf`, `perfil`) VALUES (?)";
+  db.query(q, [email, password], (err, data) => {
+    if (err) {
+      console.error('Error executing query:', err);
+      return res.status(500).json({ msg: 'Database error', error: err });
+    }
+    if (data.length > 0) {
+      const user = data[0];
+      const accessToken = jwt.sign({ id: user.id, role: user.role }, ACCESS_TOKEN_SECRET);
+      return res.status(200).json({ accessToken });
+    } else {
+      return res.status(401).json({ msg: 'Invalid credentials' });
+    }
+  });
+};
+
+export const register = (req, res) => {
+  const { nome, email, password, cpf, role } = req.body;
+  const values = [nome, email, password, cpf, role];
+
+  const q = "INSERT INTO usuarios (`nome`, `email`, `password`, `cpf`, `role`) VALUES (?)";
 
   db.query(q, [values], (err, data) => {
     if (err) {
       console.error('Error executing query:', err);
       return res.status(500).json({ msg: 'Database error', error: err });
     }
-    return res.status(200).json({ msg: 'USUARIO REGISTRADO COM SUCESSO', data });
-  });
-};
-
-export const login = (req, res) => {
-  const { email, password } = req.body;
-
-  const q = "SELECT * FROM usuarios WHERE email = ?";
-
-  db.query(q, [email], async (err, data) => {
-    if (err) {
-      console.error('Error executing query:', err);
-      return res.status(500).json({ msg: 'Database error', error: err });
-    }
-    if (data.length === 0 || !await bcrypt.compare(password, data[0].password)) {
-      return res.status(401).json({ msg: 'CREDENCIAIS INVÁLIDAS' });
-    }
-
-    const token = jwt.sign({ id: data[0].id, email: data[0].email, perfil: data[0].perfil }, JWT_SECRET, { expiresIn: '1h' });
-    return res.status(200).json({ msg: 'LOGIN BEM SUCEDIDO', token });
+    return res.status(200).json({ msg: 'User registered successfully', data });
   });
 };
