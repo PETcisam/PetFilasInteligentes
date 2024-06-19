@@ -11,8 +11,8 @@ import PerfilMedico from "./MedicoPages/PerfilMedico";
 import ExameCirurgia from "./PacientePages/ExameCirurgia";
 
 import { AlMaterno, CirurgiaGineco, Climaterio, DentistaCisam, DentistaFop, Dermatologia, EndocrinoRetorno, ExamePrevencao, GeneticistaPri, GeneticistaVolta, GinecoEndo, GinecoGeral1, GinecoGeralVolta, LaqueaduraTuba, Mastologia, MetodosContra, Neuropediatria1, NeuropediatriaVolta, OdontoP, OftalmoP, ReproHumana, ReversaoLaque } from './PacientePages/ConsultasAmbs';
-
 import HomeAdm from "./AdmPages/HomeAdm";
+import Solicitacoes from "./AdmPages/Solicitacoes";
 import HomeMedico from "./MedicoPages/HomeMedico";
 
 function App() {
@@ -58,6 +58,7 @@ function App() {
 
         {/* adm */}
         <Route path="/adm/home" element={<HomeAdm/>} />
+        <Route path="/adm/solicitacoes" element={<Solicitacoes/>} />
 
         {/* gerais */}
         <Route path="/login" element={<Login />} />
