@@ -20,8 +20,6 @@ function Cadastrar2() {
           <h3 className="subtitleform">Dados Pessoais</h3>
          
           <div className="linhainputs">
-
-
             <div className="campo">
               <label>Nome Completo:</label>
               <input type="text" />
@@ -34,12 +32,9 @@ function Cadastrar2() {
               <label>Número de Celular:</label>
               <input type="text" />
             </div>
-
           </div>
 
           <div className="linhainputs">
-
-
             <div className="campo">
               <label>Nome completo da Mãe:</label>
               <input type="text" />
@@ -49,51 +44,43 @@ function Cadastrar2() {
               <input type="text" />
             </div>
             <div className="campo">
-              <label>text:</label>
+              <label>Endereço de E-mail:</label>
               <input type="text" />
             </div>
-
           </div>
-         
         </div>
 
         <div className="dadosendereco">
           <h3 className="subtitleform" >Dados de Endereço</h3>
 
           <div className="linhainputs">
-
-
             <div className="campo">
-              <label>Nome Completo:</label>
+              <label>Rua:</label>
               <input type="text" />
             </div>
             <div className="campo">
-              <label>Data de Nascimento:</label>
+              <label>Número:</label>
               <input type="text" />
             </div>
             <div className="campo">
-              <label>Número de Celular:</label>
+              <label>Bairro:</label>
               <input type="text" />
             </div>
-
           </div>
 
           <div className="linhainputs">
-
-
             <div className="campo">
-              <label>Nome completo da Mãe:</label>
+              <label>Cidade:</label>
               <input type="text" />
             </div>
             <div className="campo">
-              <label>CPF:</label>
+              <label>Estado:</label>
               <input type="text" />
             </div>
             <div className="campo">
-              <label>text:</label>
+              <label>CEP:</label>
               <input type="text" />
             </div>
-
           </div>
         </div>
 
@@ -101,44 +88,45 @@ function Cadastrar2() {
           <h3 className="subtitleform" >Dados Complementares</h3>
 
           <div className="linhainputs">
-
-
             <div className="campo">
-              <label>Nome Completo:</label>
+              <label>Profissão:</label>
               <input type="text" />
             </div>
             <div className="campo">
-              <label>Data de Nascimento:</label>
+              <label>Escolaridade:</label>
               <input type="text" />
             </div>
-            
-
           </div>
 
           <div className="linhainputs">
-
-
             <div className="campo">
-              <label>Nome completo da Mãe:</label>
+              <label>Estado Civil:</label>
               <input type="text" />
             </div>
-            
           </div>
         </div>
 
         <div className="documentosnecessarios">
-          <h3 className="subtitleform" >Documentos Necessários</h3>
-          <div className="campo">
-            <label>RG:</label>
-            <input type="text" />
-          </div>
-          <div className="campo">
-            <label>CPF:</label>
-            <input type="text" />
-          </div>
-          {/* Outros documentos necessários */}
-        </div>
+          <h3 className="subtitleform">Documentos Necessários</h3>
+          
+          <div className="linhainputs">
+            <div className="campo">
+              <label>RG:</label>
+              <input type="file" />
+            </div>
+            <div className="campo">
+              <label>Comprovante de Residência:</label>
+              <input type="file" />
+            </div>
+            <div className="campo">
+              <label>Frente da Carteira Nacional de Saúde:</label>
+              <input type="file" />
+            </div>
 
+            <button className="btnEnviar">Enviar</button>
+          </div>
+          
+        </div>
       </div>
     </div>
   );
