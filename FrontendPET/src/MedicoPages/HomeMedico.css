@@ -1,0 +1,41 @@
+.titulohomep {
+    font-size: 60px;
+  }
+  
+  .options-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .option2, .option3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    width: 230px;
+  }
+  
+  .option2 .option-image, .option3 .option-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  
+  .option2 .option-image:hover, .option3 .option-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .option2 .option-text, .option3 .option-text {
+    margin-top: 10px;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+  .option2{
+    margin-right: 10%;
+  }

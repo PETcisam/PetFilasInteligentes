@@ -31,6 +31,8 @@
 }
 
 .option2 .option-text, .option3 .option-text {
+  font-family: 'Inter', sans-serif;
+  color: black;
   margin-top: 10px;
   font-size: 1.2em;
   text-align: center;
