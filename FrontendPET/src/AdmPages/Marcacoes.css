@@ -1,5 +1,5 @@
 /* Estilo para a barra superior */
-.barrafixamarc {
+.barra-fixa-marcacoes {
     width: 100%;
     height: 50px;
     background-color: #1E2672;
@@ -14,11 +14,11 @@
 }
 
 /* Estilo para a barra lateral */
-.sidebarmarca {
+.barra-lateral-marcacoes {
     width: 200px;
     height: 100vh;
-    background-color: #f7f7f7;
-    color: white;
+    background-color: white;
+    color: black;
     position: fixed;
     top: 50px; /* Ajustar conforme a altura da barra superior */
     left: 0;
@@ -27,60 +27,60 @@
     box-sizing: border-box;
 }
 
-/* Estilo para o container do grid */
-.grid-container {
-    margin-top: 50px; /* Ajustar conforme a altura da barra superior */
-    margin-left: 200px; /* Ajustar conforme a largura da barra lateral */
-    padding: 20px;
-    box-sizing: border-box;
+/* Estilo para os filtros */
+.filtro {
+    margin-bottom: 20px;
 }
 
-/* Estilo para a tabela do grid */
-.grid-table {
+.filtro label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+.filtro select, .filtro input[type="date"] {
+    color: black;
     width: 100%;
-    border-collapse: collapse;
-}
-
-.grid-table th, .grid-table td {
-    border-bottom: 1px solid transparent; /* Remove horizontal lines */
-    padding: 8px;
-    text-align: left;
-}
-
-.grid-table th {
-    background-color: #f2f2f2;
-}
-
-/* Ajuste para as colunas */
-.grid-table th.colgrid:first-child, .grid-table td.infogrid:first-child {
-    width: 100px; /* Ajustar conforme necessário */
-}
-
-.grid-table th.colgrid:last-child, .grid-table td.infogrid:last-child {
-    width: calc(100% - 0px); /* Ajustar conforme necessário */
-}
-
-/* Estilo para as linhas verticais */
-.grid-table th, .grid-table td {
-    border-right: 1px solid #eee; /* Linha clara entre colunas */
-}
-
-.grid-table th:last-child, .grid-table td:last-child {
-    border-right: none; /* Remove a última linha vertical */
-}
-
-/* Estilo para a coluna com ícone */
-.colgrid {
-    background-color: #ddd;
     padding: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+/* Estilo para o container da agenda */
+.agenda-container {
+    background-color: #f8f8f8;
+    margin-left: 220px; /* Espaço para a barra lateral */
+    margin-top: 70px; /* Espaço para a barra superior */
+    padding: 20px;
+}
+
+/* Estilo para cada linha da agenda */
+.linha-agenda {
     display: flex;
-    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
 }
 
-.colgrid svg {
-    margin-right: 5px; /* Espaço entre o ícone e o texto */
+/* Estilo para a coluna de hora */
+.hora-agenda {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: black;
 }
 
-.infogrid {
-    padding: 10px;
+/* Estilo para a coluna de nome */
+.nome-agenda {
+    margin-left: 30px;
+    flex-grow: 1;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Remover a linha de divisão entre as colunas de hora e nome */
+.linha-agenda .hora-agenda, .linha-agenda .nome-agenda {
+    border-right: none;
 }
