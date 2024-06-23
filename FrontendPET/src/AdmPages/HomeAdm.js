@@ -47,7 +47,7 @@ function HomeAdm(){
                 </div>
 
                 <div className="option3">
-                    <Link to="#/page2">
+                    <Link to="/adm/marcacoes">
                         <img src={img4} alt="Marcações" className="option-image" />
                         <div className="option-text">Marcações</div>
                     </Link>

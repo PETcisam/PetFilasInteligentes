@@ -1,0 +1,107 @@
+html, body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100vh;
+  }
+  
+  .containerperfil {
+    width: 100%;
+    height: 100vh; /* Usando 100vh para ocupar toda a altura da tela */
+    display: flex;
+  }
+  
+  .boxazulperfil {
+    width: 30%;
+    min-height: 100vh; 
+    background-color: #1E2672; 
+  }
+  
+  .nomeefotoperfil {
+    margin-top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .fotoperfil {
+    width: 50%; 
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: 50%; 
+  }
+  
+  .fotoperfildiv {
+    margin-bottom: 15px;
+  }
+  
+  .nomeperfildiv {
+    text-align: center;
+  }
+  
+  .nomeperfil {
+    color: white;
+  }
+  
+  .infosperfil {
+    width: 70%;
+    height: 100%; /* Ocupa toda a altura da tela */
+    background-color: white;
+    padding: 20px; /* Adiciona um espaçamento interno */
+  }
+  
+  .infosperfil h2 {
+    margin-bottom: 20px;
+  }
+  
+  .infosperfil p {
+    margin: 10px 0;
+  }
+
+  .dadosinfoperfil{
+    margin-top: 10%;
+  }
+
+  .linhastext{
+    display: flex;
+    margin-bottom: 8%;
+  }
+
+  .dadosinfoperfil {
+    margin-top: 10%;
+  }
+  .campoinfo {
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    width: 30%;
+    display: flex;
+    margin-left: 20px;
+  }
+  .labelperfil{
+    font-size: 15px;
+  }
+
+  p{
+    color: black;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+
+  .download-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1E2672;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+
