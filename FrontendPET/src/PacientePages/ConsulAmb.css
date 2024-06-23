@@ -1,4 +1,6 @@
-
+html, body{
+  overflow: scroll;
+}
 
 .consuls-container, .consuls2-container, .consuls3-container {
   display: block;
@@ -18,13 +20,12 @@
   padding: 20px;
   border-radius: 10px;
   margin: 5px 0 5px 5px;
-  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .consul:hover {
-  transform: scale(1.08) rotate(1deg);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  filter: brightness(1.1);
+  transform: scale(1.08);
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.1); */
 }
 
 .consul-image {
@@ -35,10 +36,11 @@
 }
 
 .consul-text {
+  font-family: 'Inter', sans-serif;
   margin-top: 10px;
   font-size: 15px;
   font-weight: bold;
-  color: #333;
+  color: #000000;
 }
 .col{
   margin-bottom: 60px;

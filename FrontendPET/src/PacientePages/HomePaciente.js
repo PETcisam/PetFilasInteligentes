@@ -29,8 +29,10 @@ function HomePaciente(){
           </ul>
         </nav>
         <div className="profile">
+        <Link className='perfilpacientelink' to="/paciente/perfil">
           <img src={usuario.fotoPerfil} alt="Profile" className="profile-image" />
           <span className="profile-name">{usuario.nome}</span>
+        </Link>
         </div>
       </header>
         {/* barra lateral */}
