@@ -44,45 +44,6 @@
   margin-bottom: 60px;
 }
 
-/* css do examecirurgia */
 
-.grid-container2 {
-  margin-left: 80px; /* Espaço para a barra lateral */
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-}
 
-.coluna1, .coluna2 {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 
-.consul-image2 {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.consul-image2:hover {
-  transform: scale(1.05);
-}
-
-.consul-text2 {
-  
-  margin-top: 10px;
-  text-align: center;
-  font-weight: bold;
-  color: #333;
-}
-
-/* body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */

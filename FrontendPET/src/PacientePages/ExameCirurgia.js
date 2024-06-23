@@ -2,6 +2,8 @@ import { FaUser, FaCog } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import  imgperfil from './imgspacient/perfilexemplo.jpg'
 
+import './ExameCirurgia.css'
+
 import img26 from './imgspacient/histerodiagex.jpeg';
 import img27 from './imgspacient/histerocex.jpeg';
 import img28 from './imgspacient/laqueaex.jpeg';
@@ -51,29 +53,38 @@ function ExameCirurgia(){
       {/* objeto central */}
       
      <div className='grid-container2'>
-          <div class="coluna1">
+          <div class="linhaex">
+            <div className='consulimgdiv'>
             <Link to="#page2">
               <img src={img26} alt="Exames e Cirurgias" className="consul-image2" />
               <div className="consul-text2">Histeroscopia Diagnóstica</div>
             </Link>
+            </div>
 
+            <div className='consulimgdiv' >
             <Link to="#page2">
               <img src={img27} alt="Exames e Cirurgias" className="consul-image2" />
               <div className="consul-text2">Histeroscopia Cirúrgica</div>
             </Link>
+            </div>
 
           </div>
 
-          <div class="coluna2">
+          <div class="linhaex">
+
+            <div className='consulimgdiv'>
             <Link to="#page2">
               <img src={img28} alt="Exames e Cirurgias" className="consul-image2" />
               <div className="consul-text2">Cirurgia Laqueadura Tubária</div>
             </Link>
+            </div>
 
+            <div className='consulimgdiv'>
             <Link to="#page2">
               <img src={img29} alt="Exames e Cirurgias" className="consul-image2" />
               <div className="consul-text2">Cirurgia Ginecologia Geral</div>
             </Link>
+            </div>
 
           </div>
      </div>
