@@ -6,7 +6,6 @@
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -25,6 +24,13 @@
     z-index: 1000;
     padding: 20px;
     box-sizing: border-box;
+}
+.titlepagemarcacoes{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    margin-left: 36px;
 }
 
 /* Estilo para os filtros */
@@ -50,7 +56,7 @@
 
 /* Estilo para o container da agenda */
 .agenda-container {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     margin-left: 220px; /* Espaço para a barra lateral */
     margin-top: 70px; /* Espaço para a barra superior */
     padding: 20px;

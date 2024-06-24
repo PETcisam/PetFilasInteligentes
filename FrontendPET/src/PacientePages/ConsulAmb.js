@@ -1,6 +1,7 @@
 import { FaUser, FaCog } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import './ConsulAmb.css'
+import "./ConsulAmb.css"
+
 import img4 from './imgspacient/examcirur.jpeg';
 import img5 from './imgspacient/climaterio.jpg';
 import img6 from './imgspacient/cirurgiageralginecologia.png';
@@ -35,7 +36,7 @@ function ConsulAmb() {
   };
 
     return (
-        <div>
+        <div className='pageconsulamb'>
             {/* topbar    */}
             <header className="header">
                 <div className="logo">

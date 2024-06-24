@@ -42,7 +42,7 @@ function Marcacoes() {
   return (
     <div className="pagina-marcacoes">
       <div className="barra-fixa-marcacoes">
-        <span></span>
+        <p className='titlepagemarcacoes'>Agenda Diária</p>
       </div>
       <div className="barra-lateral-marcacoes">
         <div className="filtro">
