@@ -60,7 +60,7 @@ function Solicitacoes() {
       <div className="grid-section">
         {/* filtro */}
         <div className="filtrosgrid">
-          <h1 className="titlegrid">Cirurgia XXXX</h1>
+          <h1 className="titlegrid">Solicitações</h1>
           <input className="campofiltro" placeholder="Pesquisa..." />
           <button className="botaofiltrar"><i className="fas fa-filter"></i> Filtrar</button>
         </div>
