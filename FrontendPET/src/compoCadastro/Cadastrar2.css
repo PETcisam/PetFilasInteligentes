@@ -7,7 +7,7 @@ html, body {
   padding: 0;
 }
 
-body {
+body .containercadastro{
   height: 100vh;
   display: flex;
   align-items: center;
@@ -110,13 +110,7 @@ label {
   box-sizing: border-box;
 }
 
-/* .campo input.complemen1 {
-  width: 50%;
-}
 
-.campo input.complemen2 {
-  width: 25%;
-} */
 
 
 .btnEnviar {

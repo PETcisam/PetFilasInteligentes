@@ -1,12 +1,12 @@
 //pagina home
-import Maincomp from "./compoMain/Maincomp.css";
+import "./compoMain/Maincomp.css";
 import logo from './compoMain/logocisam.jpg';
 
 function Main(){
 
     return(
 
-    <div>
+    <div className = 'paginaprincipal'>
     <header className="header">
       <div className="logo">
         <img src={logo} alt="Logo" />
