@@ -90,18 +90,15 @@ function Cadastrar2() {
           <div className="linhainputs">
             <div className="campo">
               <label>Profissão:</label>
-              <input type="text" />
+              <input className="complemen1" type="text" />
             </div>
             <div className="campo">
               <label>Escolaridade:</label>
-              <input type="text" />
+              <input className="complemen1" type="text" />
             </div>
-          </div>
-
-          <div className="linhainputs">
             <div className="campo">
               <label>Estado Civil:</label>
-              <input type="text" />
+              <input className="complemen1" type="text" />
             </div>
           </div>
         </div>

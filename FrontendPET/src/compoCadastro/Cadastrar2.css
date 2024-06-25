@@ -5,43 +5,34 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  
 }
 
-body{
+body {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .containercadastro {
   width: 100%;
   height: 100vh; /* Usando 100vh para ocupar toda a altura da tela */
   display: flex;
+  flex-direction: column;
 }
 
 .boxazul {
-  width: 40%;
-  min-height: 100vh; 
+  width: 100%;
+  min-height: 30vh; 
   background-color: #1E2672; 
-
-}
-
-.compontitlecads{
-  align-items: center;
-  margin-top: 0px;
-}
-
-.titlecadastro{
-
-  font-size: 50px;
-  color:#1E2672 ;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 0px;
- justify-content: space-around;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-
+.textosbox {
+  text-align: center;
 }
 
 .bemvindo {
@@ -59,48 +50,29 @@ body{
   font-weight: 600;
 }
 
-.textosbox {
-  margin-top: 30%;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-}
-.linhainputs{
-  display: flex;
-}
-
 .formulariocadastro {
-  width: 60%;
-  height: 100%; /* Ocupa toda a altura da tela */
+  width: 100%;
+  height: calc(100vh - 30vh); /* Altura disponível após o box azul */
   background-color: white;
-  padding: 5px; /* Adiciona um espaçamento interno */
+  padding: 20px;
+  overflow-y: auto; /* Adiciona scroll vertical quando necessário */
+  box-sizing: border-box;
 }
 
-.dadospessoais,
-.dadosendereco,
-.dadoscomplementares,
-.documentosnecessarios {
-
-  margin-left: 20px;
-  margin-bottom: 0px; 
+.compontitlecads {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.campo {
-  margin-bottom: 10px;
-}
-
-label {
-  color: black;
+.titlecadastro {
+  font-size: 32px;
+  color: #1E2672;
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  margin-left: 20px;
-  display: block;
-  margin-bottom: 5px;
-  font-size: 13px;
+  font-weight: 700;
 }
 
-.subtitleform{
-  margin-top: 0px;
+.subtitleform {
+  margin-top: 0;
   margin-bottom: 10px;
   font-family: 'Inter', sans-serif;
   font-weight: 1000;
@@ -108,34 +80,53 @@ label {
   color: black;
 }
 
-.containercadastro .formulariocadastro .campo input[type="text"] {
-  margin-left: 20px;
-  height: 60%;
-  width: calc(100% - 20px); 
+.linhainputs {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebra de linha para inputs */
+}
+
+.campo {
+  flex: 1 1 30%; /* Flex-grow, flex-shrink, flex-basis */
+  margin-bottom: 10px;
+  padding-right: 10px; /* Espaço entre os campos */
+}
+
+label {
+  color: black;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+.campo input[type="text"],
+.campo input[type="file"] {
+  width: 100%;
   padding: 8px;
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+  box-sizing: border-box;
 }
 
-.containercadastro .formulariocadastro .campo input[type="file"]{
-  margin-left: 20px;  
-  width: calc(100% - 20px); 
-  margin-right: 20px;
-
-
-
+/* .campo input.complemen1 {
+  width: 50%;
 }
+
+.campo input.complemen2 {
+  width: 25%;
+} */
+
 
 .btnEnviar {
-  background-color: #1E2672; /* Azul escuro */
-  color: white; /* Texto branco */
+  background-color: #1E2672;
+  color: white;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 14px;
   padding: 10px 20px;
-  margin: 20px;
+  margin-top: 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -143,5 +134,21 @@ label {
 }
 
 .btnEnviar:hover {
-  background-color: #3946b1; /* Tom mais claro de azul para hover */
+  background-color: #3946b1;
+}
+
+@media (min-width: 600px) {
+  .containercadastro {
+    flex-direction: row;
+  }
+
+  .boxazul {
+    width: 40%;
+    height: 100vh;
+  }
+
+  .formulariocadastro {
+    width: 60%;
+    height: 100vh;
+  }
 }
