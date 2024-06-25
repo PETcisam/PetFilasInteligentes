@@ -1,24 +1,21 @@
-// Middleware para autenticação e autorização.
 import jwt from 'jsonwebtoken';
-import { ACCESS_TOKEN_SECRET } from '../config/constants';
+import { roles } from '../config/roles';
 
 export const authenticateToken = (req, res, next) => {
-  const authHeader = req.headers['authorization'];
-  const token = authHeader && authHeader.split(' ')[1];
+  const token = req.headers['authorization'];
+  if (!token) return res.sendStatus(401);
 
-  if (token == null) return res.sendStatus(401);
-
-  jwt.verify(token, ACCESS_TOKEN_SECRET, (err, user) => {
+  jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
     if (err) return res.sendStatus(403);
     req.user = user;
     next();
   });
 };
 
-export const authorizeRoles = (...roles) => {
+export const authorizeRoles = (...allowedRoles) => {
   return (req, res, next) => {
-    if (!roles.includes(req.user.role)) {
-      return res.sendStatus(403);
+    if (!allowedRoles.includes(req.user.role)) {
+      return res.status(403).json({ msg: 'Access denied.' });
     }
     next();
   };
