@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.medico-home {
+  display: flex;
+  height: 100vh;
+}
+
+.medico-sidebar {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  width: 256px;
+  height: 100%;
+  background: #FFFFFF;
+  border-right: 1px solid #E0E0E0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.medico-grid-section {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #FFFFFF;
+}
+
+.medico-title {
+  font-family: "Inter", sans-serif;
+  font-size: 21px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.medico-titlepage {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+}
+
+.medico-subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.medico-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.medico-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  margin-bottom: 10px;
+  width: 100%;
+  background: #F7F7F7;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  transition: background 0.3s ease;
+}
+
+.medico-menu-item:hover {
+  background: #E0E0E0;
+}
+
+.medico-menu-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.medico-menu-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.medico-agendar-consulta {
+  font-family: "Inter", sans-serif;
+  background: #FFFFFF;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.medico-agendar-consulta:hover {
+  background: #F7F7F7;
+}
+
+.medico-listitem {
+  color: #000000;
+}
+
+.medico-grid-container {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.medico-grid-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  color: #333;
+}
+
+.medico-filtros {
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilos para o título */
+.medico-title {
+  color: #333; /* Cor do texto */
+  font-size: 24px; /* Tamanho da fonte */
+  margin-bottom: 10px; 
+}
+
+/* Estilos para o input */
+.medico-filtro-campo {
+  width: 250px;
+  height: 25px;
+  padding: 8px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  margin-right: 5px; 
+}
+
+.medico-filtro-botao i {
+  margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilos para o botão */
+.medico-filtro-botao {
+  height: 25px;
+  padding: 5px 14px;
+  background-color: #007bff; /* Cor de fundo azul */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos para o botão quando hover */
+.medico-filtro-botao:hover {
+  background-color: #0056b3; /* Mudança de cor de fundo quando hover */
+}
+
+.medico-col, .medico-info, .medico-action-icon {
+  font-family: "Inter", sans-serif;
+  font-weight:500;
+  color: #000000;
+}
+
+.medico-grid-table th, .medico-grid-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.medico-grid-table th {
+  background-color: #f9f9f9;
+  font-weight: 700;
+}
+
+.medico-grid-table td {
+  background-color: #fff;
+  transition: background 0.3s ease;
+}
+
+.medico-grid-table tr:hover td {
+  background-color: #f1f1f1;
+}
+
+.medico-action-icon {
+  margin: 0 5px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.medico-action-icon:hover {
+  color: #007bff;
+}

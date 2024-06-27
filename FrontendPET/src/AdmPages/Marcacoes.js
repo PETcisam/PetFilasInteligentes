@@ -3,7 +3,7 @@ import "./Marcacoes.css";
 import { FaClock } from 'react-icons/fa'; // Import the clock icon from react-icons
 
 function Marcacoes() {
-  const dados = [
+  const pacientes = [
     { prontuario: "13579", nome: "Maria Silva", data: "2024-06-03", hora: "8:00", profissional: "Dr. A" },
     { prontuario: "24680", nome: "João Souza", data: "2024-06-03", hora: "8:30", profissional: "Dr. B" },
     { prontuario: "11223", nome: "Ana Pereira", data: "2024-06-03", hora: "9:00", profissional: "Dr. A" },
@@ -19,56 +19,56 @@ function Marcacoes() {
     { prontuario: "56789", nome: "Tiago Santos", data: "2024-06-03", hora: "14:00", profissional: "Dr. A" }
   ];
 
-  const profissionais = ["Dr. A", "Dr. B"];
+  const profissionaisDisponiveis = ["Dr. A", "Dr. B"];
 
-  const [profissionalSelecionado, setProfissionalSelecionado] = useState(profissionais[0]);
-  const [dataSelecionada, setDataSelecionada] = useState("2024-06-03");
+  const [profissionalAtual, setProfissionalAtual] = useState(profissionaisDisponiveis[0]);
+  const [dataAtual, setDataAtual] = useState("2024-06-03");
 
-  const horarios = [
+  const horariosDisponiveis = [
     "8:00", "8:30", "9:00", "9:30", "10:00", "10:30", "11:00", "11:30",
     "12:00", "12:30", "13:00", "13:30", "14:00"
   ];
 
-  const agenda = horarios.map((hora, index) => {
-    const paciente = dados.find(d => d.hora === hora && d.profissional === profissionalSelecionado && d.data === dataSelecionada);
+  const listaAgenda = horariosDisponiveis.map((hora, index) => {
+    const paciente = pacientes.find(d => d.hora === hora && d.profissional === profissionalAtual && d.data === dataAtual);
     return (
-      <div key={index} className="linha-agenda">
-        <div className="hora-agenda">{hora}</div>
-        <div className="nome-agenda">{paciente ? paciente.nome : ""}</div>
+      <div key={index} className="linha-agendamento">
+        <div className="hora-agendamento">{hora}</div>
+        <div className="nome-agendamento">{paciente ? paciente.nome : ""}</div>
       </div>
     );
   });
 
   return (
-    <div className="pagina-marcacoes">
-      <div className="barra-fixa-marcacoes">
-        <p className='titlepagemarcacoes'>Agenda Diária</p>
+    <div className="pagina-agendamentos">
+      <div className="barra-superior-agendamentos">
+        <p className='titulo-pagina-agendamentos'>Agenda Diária</p>
       </div>
-      <div className="barra-lateral-marcacoes">
-        <div className="filtro">
+      <div className="barra-lateral-agendamentos">
+        <div className="filtro-agendamentos">
           <label htmlFor="profissional">Profissional:</label>
           <select 
             id="profissional" 
-            value={profissionalSelecionado} 
-            onChange={(e) => setProfissionalSelecionado(e.target.value)}
+            value={profissionalAtual} 
+            onChange={(e) => setProfissionalAtual(e.target.value)}
           >
-            {profissionais.map((prof, index) => (
+            {profissionaisDisponiveis.map((prof, index) => (
               <option key={index} value={prof}>{prof}</option>
             ))}
           </select>
         </div>
-        <div className="filtro">
+        <div className="filtro-agendamentos">
           <label htmlFor="data">Data:</label>
           <input 
             type="date" 
             id="data" 
-            value={dataSelecionada} 
-            onChange={(e) => setDataSelecionada(e.target.value)}
+            value={dataAtual} 
+            onChange={(e) => setDataAtual(e.target.value)}
           />
         </div>
       </div>
-      <div className="agenda-container">
-        {agenda}
+      <div className="container-agenda-agendamentos">
+        {listaAgenda}
       </div>
     </div>
   );

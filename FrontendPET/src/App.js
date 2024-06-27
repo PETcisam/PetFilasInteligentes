@@ -16,6 +16,8 @@ import HomeAdm from "./AdmPages/HomeAdm";
 import Solicitacoes from "./AdmPages/Solicitacoes";
 import Marcacoes from "./AdmPages/Marcacoes";
 import HomeMedico from "./MedicoPages/HomeMedico";
+import AgendaMedico from "./MedicoPages/AgendaMedico";
+import SolicitacoesMedico from "./MedicoPages/SolicitacoesMedico";
 
 function App() {
   return (
@@ -28,7 +30,7 @@ function App() {
         <Route path="/paciente/exames" element={<ExameCirurgia/>} />
         <Route path="/paciente/consultas" element={<ConsulAmb/>} />
         <Route path="/paciente/perfil" element={<PerfilPaciente/>} />
-        <Route path="/medico/perfil" element={<PerfilMedico/>} />
+        
 
                 {/* consultas ambulatoriais */}
 
@@ -57,6 +59,9 @@ function App() {
 
         {/* medicos */}
         <Route path="/medico/home" element={<HomeMedico/>} />
+        <Route path="/medico/agendamedico" element={<AgendaMedico/>} />
+        <Route path="/medico/perfil" element={<PerfilMedico/>} />
+        <Route path="/medico/solicitacoesmedico" element={<SolicitacoesMedico/>} />
 
         {/* adm */}
         <Route path="/adm/home" element={<HomeAdm/>} />

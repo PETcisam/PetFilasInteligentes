@@ -41,14 +41,14 @@ function HomeMedico(){
             <div className="options-container">
 
                 <div className="option2">
-                    <Link to="/adm/solicitacoes">
+                    <Link to="/medico/solicitacoesmedico">
                         <img src={img3} alt="Solicitações" className="option-image" />
                         <div className="option-text">Solicitações</div>
                     </Link>
                 </div>
 
                 <div className="option3">
-                    <Link to="#/page2">
+                    <Link to="/medico/agendamedico">
                         <img src={img4} alt="Marcações" className="option-image" />
                         <div className="option-text">Agenda</div>
                     </Link>
