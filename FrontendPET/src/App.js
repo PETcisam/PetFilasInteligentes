@@ -14,6 +14,7 @@ import { AlMaterno, CirurgiaGineco, Climaterio, DentistaCisam, DentistaFop, Derm
 
 import HomeAdm from "./AdmPages/HomeAdm";
 import Solicitacoes from "./AdmPages/Solicitacoes";
+import AgendamentoAdm from "./AdmPages/AgendamentoAdm";
 import Marcacoes from "./AdmPages/Marcacoes";
 import HomeMedico from "./MedicoPages/HomeMedico";
 import AgendaMensalMedico from "./MedicoPages/AgendaMensalMedico";
@@ -69,6 +70,7 @@ function App() {
         <Route path="/adm/home" element={<HomeAdm/>} />
         <Route path="/adm/marcacoes" element={<Marcacoes/>} />
         <Route path="/adm/solicitacoes" element={<Solicitacoes/>} />
+        <Route path="/adm/agendamento" element={<AgendamentoAdm/>} />
 
         {/* gerais */}
         <Route path="/login" element={<Login />} />
