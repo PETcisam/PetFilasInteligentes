@@ -25,7 +25,8 @@
     padding: 20px;
     box-sizing: border-box;
 }
-.titlepagemarcacoes{
+
+.titlepagemarcacoes {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     color: white;
@@ -84,9 +85,24 @@
     font-size: 12px;
     font-weight: bold;
     color: black;
+    width: 120px;
 }
 
-/* Remover a linha de divisão entre as colunas de hora e nome */
-.linha-agenda .hora-agenda, .linha-agenda .nome-agenda {
+/* Estilo para a coluna de especialidade */
+.especialidade-agenda {
+    margin-left: 30px;
+    flex-grow: 1;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: black;
+    font-weight: 600;
+}
+
+/* Remover a linha de divisão entre as colunas */
+.linha-agenda .hora-agenda, .linha-agenda .nome-agenda, .linha-agenda .especialidade-agenda {
     border-right: none;
+}
+
+.filtro .especialidade{
+    margin-top: 23px;
 }

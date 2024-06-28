@@ -24,7 +24,6 @@ body {
 
 .grid-section {
   flex-grow: 1;
-  padding: 20px;
   overflow-y: auto;
   background-color: #FFFFFF; /* Cinza claro */
 }
@@ -112,8 +111,8 @@ body {
 }
 
 .grid-container {
+  margin-top: 20px;
   flex-grow: 1;
-  padding: 20px;
   overflow-y: auto;
 }
 
@@ -122,10 +121,14 @@ body {
   border-collapse: collapse;
   font-size: 12px;
   color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .filtrosgrid {
   margin-top: 20px; /* Espaçamento superior */
+  margin-left: 20px;
 }
 
 /* Estilos para o título */
