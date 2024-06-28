@@ -37,9 +37,9 @@ body {
 }
 
 .medico-titlepage {
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 15px;
   color: #000000;
 }
 
@@ -123,6 +123,9 @@ body {
   border-collapse: collapse;
   font-size: 12px;
   color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .medico-filtros {
@@ -202,3 +205,23 @@ body {
 .medico-action-icon:hover {
   color: #007bff;
 }
+
+.medico-select-filtro {
+  width: 80%;
+  height: 30px;
+  padding: 1px;
+  margin-bottom: 20px;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  padding-left: 10px;
+  color: #000;
+
+}
+.opcoesfiltro{
+  font-size: 15px;
+  color: black;
+  font-family: "Inter", sans-serif;
+}
+
