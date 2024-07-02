@@ -9,7 +9,7 @@ function Solicitacoes() {
   useEffect(() => {
     // Definindo dados de exemplo
     const data = [
-      { prontuario: "12345", nome: "Maria Silva", cpf: "111.222.333-44", status: "Vermelho", prioridade: "Alta", data: "2024-06-01", solicitacao: "Cirurgia Geral", telefone: "(11) 98765-4321", email: "maria.silva@example.com" },
+      { prontuario: "12345", nome: "Maria Silva", cpf: "111.222.333-44", status: "Verde", prioridade: "Alta", data: "2024-06-01", solicitacao: "Cirurgia Geral", telefone: "(11) 98765-4321", email: "maria.silva@example.com" },
       { prontuario: "67890", nome: "João Pereira", cpf: "555.666.777-88", status: "Azul", prioridade: "Média", data: "2024-06-15", solicitacao: "Histeroscopia Cirúrgica", telefone: "(21) 91234-5678", email: "joao.pereira@example.com" },
       { prontuario: "11223", nome: "Ana Costa", cpf: "999.888.777-66", status: "Amarelo", prioridade: "Baixa", data: "2024-06-20", solicitacao: "Cirurgia Laqueadura Tubária", telefone: "(31) 99876-5432", email: "ana.costa@example.com" },
       { prontuario: "22334", nome: "Carlos Mendes", cpf: "222.333.444-55", status: "Vermelho", prioridade: "Alta", data: "2024-06-05", solicitacao: "Cirurgia Geral", telefone: "(41) 91234-5678", email: "carlos.mendes@example.com" },
@@ -41,6 +41,21 @@ function Solicitacoes() {
   };
 
   const solicitacoesFiltradas = filtro === "Todos" ? solicitacoes : solicitacoes.filter(solicitacao => solicitacao.solicitacao === filtro);
+
+  const getStatusClass = (status) => {
+    switch (status) {
+      case "Vermelho":
+        return "circulo-status vermelho";
+      case "Azul":
+        return "circulo-status azul";
+      case "Amarelo":
+        return "circulo-status amarelo";
+      case "Verde":
+        return "circulo-status verde";
+      default:
+        return "";
+    }
+  };
 
   return (
     <div className="home-adm">
@@ -88,7 +103,9 @@ function Solicitacoes() {
                   <td className="infogrid">{item.prontuario}</td>
                   <td className="infogrid">{item.nome}</td>
                   <td className="infogrid">{item.cpf}</td>
-                  <td className="infogrid">{item.status}</td>
+                 <td className="infogrid">
+                 <span className={getStatusClass(item.status)}></span>
+                </td>
                   <td className="infogrid">{item.prioridade}</td>
                   <td className="infogrid">{item.data}</td>
                   <td className="infogrid">{item.solicitacao}</td>
