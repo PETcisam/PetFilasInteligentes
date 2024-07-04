@@ -7,13 +7,19 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+console.log('chegou');
+
 // Configuração do banco de dados
 const db = mysql.createConnection({
   host: "localhost",
-  user: "root",
-  password: "@Henr84989",
-  database: "petcrud",
+  user: "admnutes",
+  password: "admin@@24@#nutes",
+  database: "gestaonutes",
+  port: 3306,
 });
+
+
+
 
 db.connect((err) => {
   if (err) {
@@ -26,6 +32,6 @@ db.connect((err) => {
 
 
 // Iniciando o servidor
-app.listen(8800, () => {
-  console.log("Rodando na porta 8800.");
+app.listen(8083, () => {
+  console.log("Rodando na porta 8082.");
 });
