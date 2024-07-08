@@ -12,6 +12,8 @@ import ExameCirurgia from "./PacientePages/ExameCirurgia";
 
 import { AlMaterno, CirurgiaGineco, Climaterio, DentistaCisam, DentistaFop, Dermatologia, EndocrinoRetorno, ExamePrevencao, GeneticistaPri, GeneticistaVolta, GinecoEndo, GinecoGeral1, GinecoGeralVolta, LaqueaduraTuba, Mastologia, MetodosContra, Neuropediatria1, NeuropediatriaVolta, OdontoP, OftalmoP, ReproHumana, ReversaoLaque } from './PacientePages/ConsultasAmbs';
 
+
+import LoginAdm from "./AdmPages/LoginAdm";
 import HomeAdm from "./AdmPages/HomeAdm";
 import Solicitacoes from "./AdmPages/Solicitacoes";
 import AgendamentoAdm from "./AdmPages/AgendamentoAdm";
@@ -67,6 +69,8 @@ function App() {
         <Route path="/medico/solicitacoesmedico" element={<SolicitacoesMedico/>} />
 
         {/* adm */}
+        <Route path="/adm/login" element={<LoginAdm/>} />
+
         <Route path="/adm/home" element={<HomeAdm/>} />
         <Route path="/adm/marcacoes" element={<Marcacoes/>} />
         <Route path="/adm/solicitacoes" element={<Solicitacoes/>} />

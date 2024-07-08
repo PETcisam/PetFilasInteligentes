@@ -1,8 +1,8 @@
 import './HomeMedico.css'
 import { FaUser, FaCog } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import img3 from '../AdmPages/calendario.jpg';
-import img4 from '../AdmPages/marcacoes.jpeg'; 
+import img3 from '../AdmPages/calendario.png';
+import img4 from '../AdmPages/marcacoes.png'; 
 
 function HomeMedico(){
 

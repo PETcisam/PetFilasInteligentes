@@ -3,9 +3,9 @@ import Axios from "axios";
 import * as yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { Link } from "react-router-dom";
-import "./Logar.css";
+import "../compoLogin/Logar.css";
 
-const Logar = () => {
+const LoginAdm = () => {
   const handleLogin = (values) => {
     console.log("Form values:", values);
     Axios.post("http://localhost:8800/login", {
@@ -32,7 +32,8 @@ const Logar = () => {
   });
 
   return (
-    <div className="container">
+    <div className="App2">
+   <div className="container">
       <Formik
         initialValues={{ email: "", password: "" }}
         validationSchema={validationsLogin}
@@ -69,7 +70,8 @@ const Logar = () => {
         )}
       </Formik>
     </div>
+    </div>
   );
 };
 
-export default Logar;
+export default LoginAdm;

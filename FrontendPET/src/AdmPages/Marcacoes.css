@@ -122,6 +122,7 @@ path{
 }
 
 /* Estilo para o pop-up */
+/* Estilo para o pop-up */
 .popup-marcacao {
     position: fixed;
     top: 0;
@@ -141,8 +142,8 @@ path{
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     position: relative;
-    width: 50%;
-    height: 60%;
+    width: 400px; /* Ajustar largura conforme necessário */
+    height: auto;
     overflow-y: auto;
     animation: slideIn 0.3s ease-out;
 }
@@ -160,8 +161,8 @@ path{
 
 .close-button {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 10px;
+    right: 10px;
     font-size: 1.5em;
     cursor: pointer;
     color: #1E2672;
@@ -174,27 +175,50 @@ path{
 
 .titlepopupdet {
     font-family: 'Inter', sans-serif;
-    font-size: 25px;
+    font-size: 18px;
     color: #1E2672;
     margin-bottom: 20px;
     text-align: center;
     padding-bottom: 10px;
+    border-bottom: 2px solid #ccc; /* Linha abaixo do título */
 }
 
 .infospopup {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .infopopup {
     font-family: 'Inter', sans-serif;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 500;
     color: #333333;
     text-align: center;
-    border-bottom: 1px solid #ccc;
-    width: 300px;
+    border: 1px solid #ccc; /* Borda em volta das informações */
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 100%; /* Preencher a largura disponível */
+    background-color: #f9f9f9;
+}
+
+/* Estilo para o botão de voltar */
+.voltar-button {
+    display: block;
+    margin: 20px auto 0; /* Centralizar horizontalmente */
+    padding: 10px 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: white;
+    background-color: #1E2672;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.voltar-button:hover {
+    background-color: #111a5a;
 }

@@ -18,9 +18,7 @@ function AgendaMedico() {
         { prontuario: "56789", nome: "Tiago Santos", data: "2024-06-03", hora: "14:00", profissional: "Dr. A", especialidade: "Cardiologia" }
     ];
 
-    const profissionais = ["Todos", "Dr. A", "Dr. B"];
     const especialidades = ["Todos", "Cardiologia", "Dermatologia"];
-    const [profissionalSelecionado, setProfissionalSelecionado] = useState(profissionais[0]);
     const [especialidadeSelecionada, setEspecialidadeSelecionada] = useState(especialidades[0]);
     const [dataSelecionada, setDataSelecionada] = useState("2024-06-03");
 
@@ -33,7 +31,6 @@ function AgendaMedico() {
         const paciente = dados.find(d => 
             d.hora === hora && 
             d.data === dataSelecionada &&
-            (profissionalSelecionado === "Todos" || d.profissional === profissionalSelecionado) &&
             (especialidadeSelecionada === "Todos" || d.especialidade === especialidadeSelecionada)
         );
         return (
@@ -52,17 +49,6 @@ function AgendaMedico() {
             </div>
             <div className="barra-lateral-marcacoes">
                 <div className="filtro">
-                    <label htmlFor="profissional">Profissional:</label>
-                    <select 
-                        id="profissional" 
-                        value={profissionalSelecionado} 
-                        onChange={(e) => setProfissionalSelecionado(e.target.value)}
-                    >
-                        {profissionais.map((prof, index) => (
-                            <option key={index} value={prof}>{prof}</option>
-                        ))}
-                    </select>
-
                     <label className="especialidade">Especialidade:</label>
                     <select 
                         id="especialidade" 

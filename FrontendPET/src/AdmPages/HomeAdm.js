@@ -1,8 +1,8 @@
 import "./HomeAdm.css"
 import { FaUser, FaCog } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import img3 from './calendario2.png';
-import img4 from './marcacoes.jpeg'; // Adicione uma imagem para marcações
+import img3 from './calendario.png';
+import img4 from './marcacoes.png'; // Adicione uma imagem para marcações
 
 function HomeAdm(){
     return(

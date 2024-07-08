@@ -1,102 +1,165 @@
-/* Estilo para a barra superior */
 .barra-superior {
-    width: 100%;
-    height: 50px;
-    background-color: #1E2672;
-    color: white;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+  width: 100%;
+  height: 50px;
+  background-color: #1E2672;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
-/* Estilo para a barra lateral */
 .barra-lateral {
-    width: 200px;
-    height: 100vh;
-    background-color: white;
-    color: black;
-    position: fixed;
-    top: 50px; /* Ajustar conforme a altura da barra superior */
-    left: 0;
-    z-index: 1000;
-    padding: 20px;
-    box-sizing: border-box;
+  width: 200px;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  position: fixed;
+  top: 50px; /* Ajustar conforme a altura da barra superior */
+  left: 0;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .titulo-pagina {
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    color: white;
-    font-weight: 600;
-    margin-left: 36px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  margin-left: 36px;
 }
 
 .formularioAgendamentoNovo {
-    width: 100%;
-    height: 100vh;
-    background-color: white;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  }
-  
-  .componenteTituloAgendamento {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .tituloAgendamento {
-    font-size: 32px;
-    color: #1E2672;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-  }
-  
-  .subtituloFormulario {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 1000;
-    font-size: 15px;
-    color: black;
-  }
-  
-  .linhaInputs {
-    display: flex;
-    flex-wrap: wrap; /* Permite quebra de linha para inputs */
-  }
-  
-  .campoNovo {
-    flex: 1 1 30%; /* Flex-grow, flex-shrink, flex-basis */
-    margin-bottom: 10px;
-    padding-right: 10px; /* Espaço entre os campos */
-  }
-  
-  label {
-    color: black;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    display: block;
-    margin-bottom: 5px;
-    font-size: 13px;
-  }
-  
-  .campoNovo input[type="text"],
-  .campoNovo input[type="file"] {
-    width: 100%;
-    padding: 8px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
+.componenteTituloAgendamento {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-  
+.tituloAgendamento {
+  font-size: 32px;
+  color: #1E2672;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.subtituloFormulario {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 1000;
+  font-size: 15px;
+  color: black;
+}
+
+.linhaInputs {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebra de linha para inputs */
+}
+
+.campoNovo {
+  flex: 1 1 30%; /* Flex-grow, flex-shrink, flex-basis */
+  margin-bottom: 10px;
+  padding-right: 10px; /* Espaço entre os campos */
+}
+
+label {
+  color: black;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+.campoNovo p {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  margin: 0;
+}
+
+.dadosPessoaisNovo, .dadosEnderecoNovo, .dadosComplementaresNovo, .DocumentosContainer {
+  width: 50%;
+}
+
+.DocumentosContainer {
+  margin-top: 30px;
+}
+
+#documentobox1, #documentobox2, #documentobox3 {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#documentobox1:hover, #documentobox2:hover, #documentobox3:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo para o popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+}
+
+.popup-inner {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  height: 50%;
+  width: 50%;
+}
+.butoeesrejapro{
+  display: flex;
+  justify-content: space-evenly;
+ 
+}
+.imgdoc1{
+  padding-right: 20px;
+  width: 45%;
+  height: 55%;
+}
+#botaoaprovar, #botaorejeitar{
+  height: auto;
+}
+#botaoaprovar{
+  background-color: green;
+}
+#botaorejeitar{
+  background-color: red;
+}
+
+/* Novos estilos para aprovação/rejeição */
+#aprovado.campoNovo p {
+  background-color: #d4edda; /* Verde claro */
+}
+
+#rejeitado.campoNovo p {
+  background-color: #f8d7da; /* Vermelho claro */
+}
