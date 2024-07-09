@@ -86,6 +86,7 @@
     font-weight: bold;
     color: black;
     width: 120px;
+    cursor: pointer;
 }
 
 /* Estilo para a coluna de especialidade */

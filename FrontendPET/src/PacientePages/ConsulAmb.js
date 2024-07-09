@@ -46,7 +46,6 @@ function ConsulAmb() {
                     <ul>
                         <li><a href="/">Inicio</a></li>
                         <li><a href="#option2">Contato</a></li>
-                        <li><a href="#option3">Mensagem</a></li>
                         <li><a href="/">Sair</a></li>
                     </ul>
                 </nav>

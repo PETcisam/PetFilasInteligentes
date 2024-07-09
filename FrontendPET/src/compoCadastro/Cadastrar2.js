@@ -108,15 +108,23 @@ function Cadastrar2() {
           
           <div className="linhainputs">
             <div className="campo">
-              <label>RG:</label>
+              <label>RG FRENTE:</label>
+              <input type="file" />
+            </div>
+            <div className="campo">
+              <label>RG VERSO:</label>
               <input type="file" />
             </div>
             <div className="campo">
               <label>Comprovante de Residência:</label>
               <input type="file" />
             </div>
-            <div className="campo">
-              <label>Frente da Carteira Nacional de Saúde:</label>
+            <div className="campo" id="campodoc">
+              <label>CNS FRENTE:</label>
+              <input type="file" />
+            </div>
+            <div className="campo"  id="campodoc">
+              <label>CNS VERSO:</label>
               <input type="file" />
             </div>
 
