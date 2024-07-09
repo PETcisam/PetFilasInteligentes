@@ -58,14 +58,14 @@ function ExameCirurgia(){
      <div className='grid-container2'>
           <div class="linhaex">
             <div className='consulimgdiv'>
-            <Link to="#page2">
+            <Link to="/paciente/exames/histerodiag">
               <img src={img26} alt="Exames e Cirurgias" className="consul-image2" />
               <div className="consul-text2">Histeroscopia Diagnóstica</div>
             </Link>
             </div>
 
             <div className='consulimgdiv' >
-            <Link to="#page2">
+            <Link to="/paciente/exames/histerocir">
               <img src={img27} alt="Exames e Cirurgias" className="consul-image2" />
               <div className="consul-text2">Histeroscopia Cirúrgica</div>
             </Link>
@@ -76,14 +76,14 @@ function ExameCirurgia(){
           <div class="linhaex">
 
             <div className='consulimgdiv'>
-            <Link to="#page2">
+            <Link to="/paciente/exames/cirgurglaque">
               <img src={img28} alt="Exames e Cirurgias" className="consul-image2" />
               <div className="consul-text2">Cirurgia Laqueadura Tubária</div>
             </Link>
             </div>
 
             <div className='consulimgdiv'>
-            <Link to="#page2">
+            <Link to="/paciente/exames/cirurgiaginec">
               <img src={img29} alt="Exames e Cirurgias" className="consul-image2" />
               <div className="consul-text2">Cirurgia Ginecologia Geral</div>
             </Link>

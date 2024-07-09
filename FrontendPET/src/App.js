@@ -11,7 +11,7 @@ import PerfilMedico from "./MedicoPages/PerfilMedico";
 import ExameCirurgia from "./PacientePages/ExameCirurgia";
 
 import { AlMaterno, CirurgiaGineco, Climaterio, DentistaCisam, DentistaFop, Dermatologia, EndocrinoRetorno, ExamePrevencao, GeneticistaPri, GeneticistaVolta, GinecoEndo, GinecoGeral1, GinecoGeralVolta, LaqueaduraTuba, Mastologia, MetodosContra, Neuropediatria1, NeuropediatriaVolta, OdontoP, OftalmoP, ReproHumana, ReversaoLaque } from './PacientePages/ConsultasAmbs';
-
+import { HDiagnostica , HCirurgica , CirurLaq , GinecoGeral } from "./PacientePages/ExameCirurgiaS";
 
 import LoginAdm from "./AdmPages/LoginAdm";
 import HomeAdm from "./AdmPages/HomeAdm";
@@ -60,6 +60,14 @@ function App() {
                 <Route path="/paciente/consultas/oftalmoP" element={<OftalmoP />} />
                 <Route path="/paciente/consultas/reprohumana" element={<ReproHumana />} />
                 <Route path="/paciente/consultas/reversaolaque" element={<ReversaoLaque />} />
+
+
+                {/* Exames e Cirurgias */}
+                <Route path="/paciente/exames/histerodiag" element={<HDiagnostica />} />
+                <Route path="/paciente/exames/histerocir" element={<HCirurgica />} />
+                <Route path="/paciente/exames/cirgurglaque" element={<CirurLaq />} />
+                <Route path="/paciente/exames/cirurgiaginec" element={<GinecoGeral />} />
+
 
         {/* medicos */}
         <Route path="/medico/home" element={<HomeMedico/>} />
